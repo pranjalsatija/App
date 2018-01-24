@@ -6,9 +6,10 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
+import Core
 import UIKit
 
-@IBDesignable class RoundedTextField: UITextField {
+@IBDesignable class TextField: UITextField {
     @IBInspectable var horizontalPadding: CGFloat = 0
     @IBInspectable var placeholderColor: UIColor? {
         didSet {
@@ -35,7 +36,25 @@ import UIKit
     }
 }
 
-extension RoundedTextField {
+extension TextField {
+    func showError(message: String) {
+        let placeholderColor = self.placeholderColor
+        let placeHolderText = placeholder
+
+        self.placeholderColor = .error
+        self.placeholder = message
+        self.text = ""
+        configureAttributedPlaceholder()
+
+        Countdown.start(duration: 3) {
+            self.placeholderColor = placeholderColor
+            self.placeholder = placeHolderText
+            self.configureAttributedPlaceholder()
+        }
+    }
+}
+
+extension TextField {
     override func textRect(forBounds bounds: CGRect) -> CGRect {
         return CGRect(x: bounds.origin.x + horizontalPadding,
                       y: bounds.origin.y + verticalPadding,
@@ -48,7 +67,7 @@ extension RoundedTextField {
     }
 }
 
-extension RoundedTextField {
+extension TextField {
     private func configureAttributedPlaceholder() {
         guard let text = placeholder, let color = placeholderColor else {
             return

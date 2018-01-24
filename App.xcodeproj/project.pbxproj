@@ -7,22 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */; };
+		AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF307BB62018148600145C18 /* UIViewControllerExtension.swift */; };
+		AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */; };
+		AF307BBB2018191B00145C18 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF307BBA2018191B00145C18 /* RoundButton.swift */; };
+		AF307BBD20181D1C00145C18 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF307BBC20181D1C00145C18 /* Icons.xcassets */; };
 		AFA03D442015AC970033A87B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; };
 		AFA03D452015AC970033A87B /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */; };
-		AFA03D512015B08C0033A87B /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA03D502015B08C0033A87B /* RoundedButton.swift */; };
-		AFA03D532015B1B10033A87B /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA03D522015B1B10033A87B /* RoundedTextField.swift */; };
+		AFA03D512015B08C0033A87B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA03D502015B08C0033A87B /* Button.swift */; };
+		AFA03D532015B1B10033A87B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA03D522015B1B10033A87B /* TextField.swift */; };
 		AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF0C7920159C5000B04C8E /* AppDelegate.swift */; };
-		AFDF0C8120159C5100B04C8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8020159C5100B04C8E /* Assets.xcassets */; };
+		AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8020159C5100B04C8E /* Colors.xcassets */; };
 		AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8220159C5100B04C8E /* LaunchScreen.storyboard */; };
 		AFDF0CAD2015AC2700B04C8E /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CAB2015AC2700B04C8E /* Parse.framework */; };
 		AFDF0CAE2015AC4100B04C8E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CAA2015AC2700B04C8E /* Bolts.framework */; };
 		AFDF0CAF2015AC4100B04C8E /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CAA2015AC2700B04C8E /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFDF0CB12015AC4100B04C8E /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CAB2015AC2700B04C8E /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFEC3A5E2017AC8400375989 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC3A5D2017AC8400375989 /* Strings.swift */; };
+		AFF4AC9B20171AED00917BF7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF4AC9A20171AED00917BF7 /* Colors.swift */; };
 		AFFDD56E2016B73E00FC1058 /* ViewControllerMakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */; };
-		AFFDD5732016B7BD00FC1058 /* StatefulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD5722016B7BD00FC1058 /* StatefulViewController.swift */; };
-		AFFDD5752016B80000FC1058 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD5742016B80000FC1058 /* ViewController.swift */; };
-		AFFDD5772016B84900FC1058 /* StateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD5762016B84900FC1058 /* StateManager.swift */; };
+		AFFDD5752016B80000FC1058 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD5742016B80000FC1058 /* SplashScreenViewController.swift */; };
+		AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD57C201700D700FC1058 /* UIAlertAction Extension.swift */; };
+		AFFDD57F2017039C00FC1058 /* ContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD57E2017039C00FC1058 /* ContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,12 +87,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPINViewController.swift; sourceTree = "<group>"; };
+		AF307BB62018148600145C18 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyPINViewController.storyboard; sourceTree = "<group>"; };
+		AF307BBA2018191B00145C18 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		AF307BBC20181D1C00145C18 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreenViewController.storyboard; sourceTree = "<group>"; };
-		AFA03D502015B08C0033A87B /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
-		AFA03D522015B1B10033A87B /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		AFA03D502015B08C0033A87B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		AFA03D522015B1B10033A87B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		AFDF0C7620159C5000B04C8E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDF0C7920159C5000B04C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AFDF0C8020159C5100B04C8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AFDF0C8020159C5100B04C8E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		AFDF0C8320159C5100B04C8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AFDF0C8520159C5100B04C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AFDF0C8A20159C5100B04C8E /* AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -95,10 +107,12 @@
 		AFDF0CAA2015AC2700B04C8E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Bolts.framework; path = "../../../Common Frameworks/Bolts.framework"; sourceTree = "<group>"; };
 		AFDF0CAB2015AC2700B04C8E /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = "../../../Common Frameworks/Parse.framework"; sourceTree = "<group>"; };
 		AFDF0CB32015AC7600B04C8E /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../../../Core/Core.xcodeproj; sourceTree = "<group>"; };
+		AFEC3A5D2017AC8400375989 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		AFF4AC9A20171AED00917BF7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMakeable.swift; sourceTree = "<group>"; };
-		AFFDD5722016B7BD00FC1058 /* StatefulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatefulViewController.swift; sourceTree = "<group>"; };
-		AFFDD5742016B80000FC1058 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AFFDD5762016B84900FC1058 /* StateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateManager.swift; sourceTree = "<group>"; };
+		AFFDD5742016B80000FC1058 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		AFFDD57C201700D700FC1058 /* UIAlertAction Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction Extension.swift"; sourceTree = "<group>"; };
+		AFFDD57E2017039C00FC1058 /* ContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,12 +143,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AF077E382017F7430040D2DE /* VerifyPIN */ = {
+			isa = PBXGroup;
+			children = (
+				AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */,
+				AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */,
+			);
+			path = VerifyPIN;
+			sourceTree = "<group>";
+		};
+		AF232698201713C700A9350E /* View Controller Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AFFDD57C201700D700FC1058 /* UIAlertAction Extension.swift */,
+				AF307BB62018148600145C18 /* UIViewControllerExtension.swift */,
+				AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */,
+			);
+			path = "View Controller Extensions";
+			sourceTree = "<group>";
+		};
 		AFA03D4A2015AF880033A87B /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
 				AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */,
-				AFFDD5742016B80000FC1058 /* ViewController.swift */,
-				AFFDD5762016B84900FC1058 /* StateManager.swift */,
+				AFFDD5742016B80000FC1058 /* SplashScreenViewController.swift */,
 			);
 			path = SplashScreen;
 			sourceTree = "<group>";
@@ -142,8 +174,10 @@
 		AFA03D4F2015B0810033A87B /* UI Components */ = {
 			isa = PBXGroup;
 			children = (
-				AFA03D502015B08C0033A87B /* RoundedButton.swift */,
-				AFA03D522015B1B10033A87B /* RoundedTextField.swift */,
+				AFA03D502015B08C0033A87B /* Button.swift */,
+				AFFDD57E2017039C00FC1058 /* ContainerView.swift */,
+				AF307BBA2018191B00145C18 /* RoundButton.swift */,
+				AFA03D522015B1B10033A87B /* TextField.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -174,7 +208,8 @@
 			isa = PBXGroup;
 			children = (
 				AFDF0CA92015AC1000B04C8E /* Frameworks */,
-				AFDF0C8020159C5100B04C8E /* Assets.xcassets */,
+				AFDF0C8020159C5100B04C8E /* Colors.xcassets */,
+				AF307BBC20181D1C00145C18 /* Icons.xcassets */,
 				AFDF0C8220159C5100B04C8E /* LaunchScreen.storyboard */,
 				AFDF0C8520159C5100B04C8E /* Info.plist */,
 			);
@@ -200,9 +235,8 @@
 		AFDF0CA72015AB7900B04C8E /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				AFFDD5722016B7BD00FC1058 /* StatefulViewController.swift */,
-				AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */,
 				AFA03D4A2015AF880033A87B /* SplashScreen */,
+				AF077E382017F7430040D2DE /* VerifyPIN */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -211,6 +245,9 @@
 			isa = PBXGroup;
 			children = (
 				AFDF0C7920159C5000B04C8E /* AppDelegate.swift */,
+				AFF4AC9A20171AED00917BF7 /* Colors.swift */,
+				AFEC3A5D2017AC8400375989 /* Strings.swift */,
+				AF232698201713C700A9350E /* View Controller Extensions */,
 				AFA03D4F2015B0810033A87B /* UI Components */,
 			);
 			path = Sources;
@@ -368,8 +405,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */,
+				AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */,
 				AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */,
-				AFDF0C8120159C5100B04C8E /* Assets.xcassets in Resources */,
+				AF307BBD20181D1C00145C18 /* Icons.xcassets in Resources */,
+				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,13 +433,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AFFDD5752016B80000FC1058 /* ViewController.swift in Sources */,
-				AFA03D512015B08C0033A87B /* RoundedButton.swift in Sources */,
+				AF307BBB2018191B00145C18 /* RoundButton.swift in Sources */,
+				AFFDD5752016B80000FC1058 /* SplashScreenViewController.swift in Sources */,
+				AFEC3A5E2017AC8400375989 /* Strings.swift in Sources */,
+				AFA03D512015B08C0033A87B /* Button.swift in Sources */,
 				AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */,
-				AFFDD5772016B84900FC1058 /* StateManager.swift in Sources */,
-				AFFDD5732016B7BD00FC1058 /* StatefulViewController.swift in Sources */,
+				AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */,
+				AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */,
+				AFF4AC9B20171AED00917BF7 /* Colors.swift in Sources */,
 				AFFDD56E2016B73E00FC1058 /* ViewControllerMakeable.swift in Sources */,
-				AFA03D532015B1B10033A87B /* RoundedTextField.swift in Sources */,
+				AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */,
+				AFFDD57F2017039C00FC1058 /* ContainerView.swift in Sources */,
+				AFA03D532015B1B10033A87B /* TextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

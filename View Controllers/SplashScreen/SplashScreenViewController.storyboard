@@ -7,43 +7,44 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Splash Screen View Controller-->
         <scene sceneID="K3A-oy-KAB">
             <objects>
-                <viewController id="P9b-Mq-8SI" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashScreenViewController" id="P9b-Mq-8SI" customClass="SplashScreenViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PE5-Om-GCb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tn-4U-MDo">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4tn-4U-MDo" customClass="ContainerView" customModule="App" customModuleProvider="target">
                                 <rect key="frame" x="47" y="309.66666666666669" width="281" height="202.66666666666669"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="reG-km-ukP">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="33.666666666666664"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="Primary Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="duB-fq-T78">
                                         <rect key="frame" x="0.0" y="37.666666666666629" width="281" height="67"/>
                                         <string key="text">mark lets you explore events near you and around the world. Enter your phone number to get started. We'll text you a code to confirm your identity.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" name="Secondary Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-aD-wSq" customClass="RoundedTextField" customModule="App" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fOb-aD-wSq" customClass="TextField" customModule="App" customModuleProvider="target">
                                         <rect key="frame" x="16" y="120.66666666666663" width="249" height="40"/>
-                                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="Text Field Background"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="aUV-xo-vtx"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="horizontalPadding">
                                                 <real key="value" value="8"/>
@@ -52,18 +53,22 @@
                                                 <real key="value" value="8"/>
                                             </userDefinedRuntimeAttribute>
                                             <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                <color key="value" red="0.80392156862745101" green="0.80392156862745101" blue="0.80392156862745101" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                                <color key="value" name="Disabled Text"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-BP-81P" customClass="RoundedButton" customModule="App" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e4i-BP-81P" customClass="Button" customModule="App" customModuleProvider="target">
                                         <rect key="frame" x="100" y="168.66666666666663" width="81" height="34"/>
-                                        <color key="backgroundColor" red="0.23921568627450979" green="0.65490196078431373" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" name="Base"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <color key="tintColor" name="Active Icon"/>
                                         <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
                                         <state key="normal" title="TEXT ME">
-                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="titleColor" name="Button Text"/>
                                         </state>
+                                        <connections>
+                                            <action selector="sendPINButtonPressed" destination="P9b-Mq-8SI" eventType="touchUpInside" id="jH3-5C-gsQ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -85,11 +90,12 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your phone number won't be visible to anyone else." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfJ-Qm-gSE">
                                 <rect key="frame" x="8" y="753" width="359" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Disabled Text"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="nfJ-Qm-gSE" firstAttribute="leading" secondItem="ySf-jq-HhY" secondAttribute="leading" constant="8" id="0tv-bZ-iLQ"/>
                             <constraint firstItem="4tn-4U-MDo" firstAttribute="centerX" secondItem="ySf-jq-HhY" secondAttribute="centerX" id="4ba-WZ-2wm"/>
@@ -99,11 +105,46 @@
                             <constraint firstItem="4tn-4U-MDo" firstAttribute="width" secondItem="PE5-Om-GCb" secondAttribute="width" multiplier="0.75" id="vs9-ee-761"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ySf-jq-HhY"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="fuS-8b-sOr" appends="YES" id="IAg-Xk-Wbl"/>
+                        </connections>
                     </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="e4i-BP-81P" id="6Vj-U4-bpj"/>
+                        <outlet property="phoneNumberTextField" destination="fOb-aD-wSq" id="wrx-44-eMr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N7z-7l-job" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="fuS-8b-sOr">
+                    <connections>
+                        <action selector="endEditing" destination="P9b-Mq-8SI" id="RD3-W7-jqc"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-135.5" y="124.5"/>
         </scene>
     </scenes>
+    <resources>
+        <namedColor name="Active Icon">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.54000002145767212" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Base">
+            <color red="0.23921568627450981" green="0.65490196078431373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Button Text">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Disabled Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.3799999952" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Primary Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.87000000476837158" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Secondary Text">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.54000002145767212" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Text Field Background">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.059999998658895493" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
