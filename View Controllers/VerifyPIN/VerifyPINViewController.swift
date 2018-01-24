@@ -17,7 +17,7 @@ final class VerifyPINViewController: UIViewController, ViewControllerMakeable {
 }
 
 extension VerifyPINViewController {
-    @IBAction fileprivate func verifyPINButtonPressed() {
+    @IBAction func verifyPINButtonPressed() {
         guard let pin = pinTextField.text else {
             pinTextField.showError(message: String.PlaceholderErrorText.invalidPIN)
             return
@@ -32,7 +32,7 @@ extension VerifyPINViewController {
             } else if error != nil {
                 self.showError()
             } else {
-                //self.present(MapViewController.make(), animated: true)
+                self.present(WalkthroughViewController.make(), animated: true)
             }
         }
     }

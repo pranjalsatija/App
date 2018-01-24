@@ -15,11 +15,16 @@
 		AF307BC9201838EB00145C18 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; };
 		AF307BCA201838EB00145C18 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; };
 		AF307BCB201838EB00145C18 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */; };
+		AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5F2019326300443157 /* NotificationAccessPage.swift */; };
 		AFA03D442015AC970033A87B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; };
 		AFA03D452015AC970033A87B /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */; };
 		AFA03D512015B08C0033A87B /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA03D502015B08C0033A87B /* Button.swift */; };
 		AFA03D532015B1B10033A87B /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFA03D522015B1B10033A87B /* TextField.swift */; };
+		AFAD531A201840E500795D69 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD5319201840E500795D69 /* WalkthroughViewController.swift */; };
+		AFAD531C201841C300795D69 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD531B201841C300795D69 /* Map.swift */; };
+		AFAD532220184BF500795D69 /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */; };
 		AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF0C7920159C5000B04C8E /* AppDelegate.swift */; };
 		AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8020159C5100B04C8E /* Colors.xcassets */; };
 		AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8220159C5100B04C8E /* LaunchScreen.storyboard */; };
@@ -97,9 +102,14 @@
 		AF307BBA2018191B00145C18 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AF307BBC20181D1C00145C18 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF307BC8201838EB00145C18 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MGLCoordinateBounds+GeoBox.swift"; sourceTree = "<group>"; };
+		AF822B5F2019326300443157 /* NotificationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAccessPage.swift; sourceTree = "<group>"; };
 		AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreenViewController.storyboard; sourceTree = "<group>"; };
 		AFA03D502015B08C0033A87B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		AFA03D522015B1B10033A87B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		AFAD5319201840E500795D69 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		AFAD531B201841C300795D69 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
 		AFDF0C7620159C5000B04C8E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDF0C7920159C5000B04C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFDF0C8020159C5100B04C8E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -169,6 +179,22 @@
 			path = "View Controller Extensions";
 			sourceTree = "<group>";
 		};
+		AF822B5820192CAB00443157 /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				AF822B5F2019326300443157 /* NotificationAccessPage.swift */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		AF822B5C2019316200443157 /* Convenience */ = {
+			isa = PBXGroup;
+			children = (
+				AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */,
+			);
+			path = Convenience;
+			sourceTree = "<group>";
+		};
 		AFA03D4A2015AF880033A87B /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,10 +209,21 @@
 			children = (
 				AFA03D502015B08C0033A87B /* Button.swift */,
 				AFFDD57E2017039C00FC1058 /* ContainerView.swift */,
+				AFAD531B201841C300795D69 /* Map.swift */,
 				AF307BBA2018191B00145C18 /* RoundButton.swift */,
 				AFA03D522015B1B10033A87B /* TextField.swift */,
 			);
 			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		AFAD5318201840D500795D69 /* Walkthrough */ = {
+			isa = PBXGroup;
+			children = (
+				AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */,
+				AFAD5319201840E500795D69 /* WalkthroughViewController.swift */,
+				AF822B5820192CAB00443157 /* Pages */,
+			);
+			path = Walkthrough;
 			sourceTree = "<group>";
 		};
 		AFDF0C6D20159C5000B04C8E = {
@@ -244,6 +281,7 @@
 			children = (
 				AFA03D4A2015AF880033A87B /* SplashScreen */,
 				AF077E382017F7430040D2DE /* VerifyPIN */,
+				AFAD5318201840D500795D69 /* Walkthrough */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -253,6 +291,7 @@
 			children = (
 				AFDF0C7920159C5000B04C8E /* AppDelegate.swift */,
 				AFF4AC9A20171AED00917BF7 /* Colors.swift */,
+				AF822B5C2019316200443157 /* Convenience */,
 				AFEC3A5D2017AC8400375989 /* Strings.swift */,
 				AF232698201713C700A9350E /* View Controller Extensions */,
 				AFA03D4F2015B0810033A87B /* UI Components */,
@@ -417,6 +456,7 @@
 				AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */,
 				AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */,
 				AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */,
+				AFAD532220184BF500795D69 /* WalkthroughViewController.storyboard in Resources */,
 				AF307BBD20181D1C00145C18 /* Icons.xcassets in Resources */,
 				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
 			);
@@ -477,11 +517,15 @@
 				AFEC3A5E2017AC8400375989 /* Strings.swift in Sources */,
 				AFA03D512015B08C0033A87B /* Button.swift in Sources */,
 				AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */,
+				AFAD531A201840E500795D69 /* WalkthroughViewController.swift in Sources */,
 				AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */,
 				AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */,
 				AFF4AC9B20171AED00917BF7 /* Colors.swift in Sources */,
 				AFFDD56E2016B73E00FC1058 /* ViewControllerMakeable.swift in Sources */,
+				AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */,
+				AFAD531C201841C300795D69 /* Map.swift in Sources */,
 				AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */,
+				AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */,
 				AFFDD57F2017039C00FC1058 /* ContainerView.swift in Sources */,
 				AFA03D532015B1B10033A87B /* TextField.swift in Sources */,
 			);

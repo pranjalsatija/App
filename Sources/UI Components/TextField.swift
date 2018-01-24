@@ -9,7 +9,8 @@
 import Core
 import UIKit
 
-@IBDesignable class TextField: UITextField {
+@IBDesignable
+class TextField: UITextField {
     @IBInspectable var horizontalPadding: CGFloat = 0
     @IBInspectable var placeholderColor: UIColor? {
         didSet {

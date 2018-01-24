@@ -8,7 +8,8 @@
 
 import UIKit
 
-@IBDesignable class RoundButton: Button {
+@IBDesignable
+class RoundButton: Button {
     @IBInspectable var roundsSuperview: Bool = false {
         didSet {
             performSetup()

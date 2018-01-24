@@ -8,7 +8,8 @@
 
 import UIKit
 
-@IBDesignable class Button: UIButton {
+@IBDesignable
+class Button: UIButton {
     var loadingIndicator: UIActivityIndicatorView!
 
     override init(frame: CGRect) {
