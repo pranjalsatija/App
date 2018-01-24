@@ -29,7 +29,7 @@ extension UIViewController {
             message: String.AlertMessage.errorOccurred,
             preferredStyle: .alert
         )
-        
+
         alert.addAction(.dismiss(alert))
         self.present(alert, animated: true, completion: nil)
     }

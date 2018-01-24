@@ -6,7 +6,6 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
-
 // MARK: UIAlertController
 extension String {
     struct AlertActionTitle {

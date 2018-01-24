@@ -7,7 +7,35 @@
 		<key>App.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>AppTests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>2</integer>
+		</dict>
+		<key>AppUITests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>AFDF0C7520159C5000B04C8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFDF0C8920159C5100B04C8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>AFDF0C9420159C5100B04C8E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

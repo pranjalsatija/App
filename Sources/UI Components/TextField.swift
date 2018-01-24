@@ -19,7 +19,6 @@ import UIKit
 
     @IBInspectable var verticalPadding: CGFloat = 0
 
-
     override init(frame: CGRect) {
         super.init(frame: frame)
         performSetup()

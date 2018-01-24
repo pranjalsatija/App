@@ -15,8 +15,9 @@ protocol ViewControllerMakeable {
 extension ViewControllerMakeable where Self: UIViewController {
     static func make(_ block: ((Self) -> Void)? = nil) -> Self {
         let storyboard = UIStoryboard(name: String(describing: Self.self), bundle: .main)
+        let identifier = String(describing: Self.self)
         // swiftlint:disable:next force_cast
-        let viewController = storyboard.instantiateViewController(withIdentifier: String(describing: Self.self)) as! Self
+        let viewController = storyboard.instantiateViewController(withIdentifier: identifier) as! Self
         block?(viewController)
         return viewController
     }

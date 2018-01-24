@@ -15,8 +15,6 @@ import UIKit
         }
     }
 
-    
-
     open override func performSetup() {
         if roundsSuperview {
             superview!.clipsToBounds = true

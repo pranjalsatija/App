@@ -10,9 +10,8 @@ import UIKit
 
 extension UIAlertAction {
     static func dismiss(_ alert: UIAlertController) -> UIAlertAction {
-        return UIAlertAction(title: String.AlertActionTitle.dismiss, style: .cancel) {(action) in
+        return UIAlertAction(title: String.AlertActionTitle.dismiss, style: .cancel) {(_) in
             alert.dismiss(animated: true)
         }
     }
 }
-

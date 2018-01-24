@@ -34,7 +34,9 @@ class ContainerView: UIView {
 
 extension ContainerView {
     private func performSetup() {
-        let willShowObserver = NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow, object: nil, queue: .main) {(notification) in
+        let willShowObserver = NotificationCenter.default.addObserver(forName: .UIKeyboardWillShow,
+                                                                      object: nil,
+                                                                      queue: .main) {(notification) in
 
             guard
                 let userInfo = notification.userInfo,
@@ -55,7 +57,10 @@ extension ContainerView {
             }
         }
 
-        let willHideObserver = NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide, object: nil, queue: .main) {(_) in
+        let willHideObserver = NotificationCenter.default.addObserver(forName: .UIKeyboardWillHide,
+                                                                      object: nil,
+                                                                      queue: .main) {(_) in
+
             let yConstraint = self.superview?.constraints.first(where: { $0.firstAttribute == .centerY })
             yConstraint?.constant = 0
             self.superview?.layoutIfNeeded()

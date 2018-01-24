@@ -24,7 +24,7 @@ extension VerifyPINViewController {
         }
 
         verifyPINButton.showLoading()
-        user.verifyPIN(pin) {(error, wasVerified) in
+        user.verifyPIN(pin) {(error, _) in
             self.verifyPINButton.hideLoading()
 
             if let error = error as? User.Error, error == .invalidPIN {
@@ -32,7 +32,7 @@ extension VerifyPINViewController {
             } else if error != nil {
                 self.showError()
             } else {
-                //move to walkthrough
+                //self.present(MapViewController.make(), animated: true)
             }
         }
     }

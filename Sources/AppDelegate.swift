@@ -14,5 +14,9 @@ import UIKit
 
     func applicationDidFinishLaunching(_ application: UIApplication) {
         Core.initialize(withAppID: "mark", serverURL: "https://api.mark.events/parse")
+
+        if User.current != nil {
+            //window?.rootViewController = MapViewController.make()
+        }
     }
 }

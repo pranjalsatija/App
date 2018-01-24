@@ -21,22 +21,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOS-ck-zrg" customClass="ContainerView" customModule="App" customModuleProvider="target">
-                                <rect key="frame" x="47" y="267" width="281" height="153"/>
+                                <rect key="frame" x="47" y="259.5" width="281" height="169.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3R-GP-lQD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter Code" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z3R-GP-lQD">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="34"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
                                         <color key="textColor" name="Primary Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code we just texted you to log in." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-iz-rU2">
-                                        <rect key="frame" x="0.0" y="38" width="281" height="17"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter the code we just texted you. It may take a few seconds to arrive." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azp-iz-rU2">
+                                        <rect key="frame" x="0.0" y="38" width="281" height="33.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <color key="textColor" name="Secondary Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tln-H6-mgQ" customClass="TextField" customModule="App" customModuleProvider="target">
-                                        <rect key="frame" x="16" y="71" width="249" height="40"/>
+                                        <rect key="frame" x="16" y="87.5" width="249" height="40"/>
                                         <color key="backgroundColor" name="Text Field Background"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="xDR-dS-x7K"/>
@@ -57,7 +57,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="frW-7l-xgp" customClass="Button" customModule="App" customModuleProvider="target">
-                                        <rect key="frame" x="84" y="119" width="114" height="34"/>
+                                        <rect key="frame" x="84" y="135.5" width="114" height="34"/>
                                         <color key="backgroundColor" name="Base"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
                                         <color key="tintColor" name="Active Icon"/>
@@ -70,7 +70,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="tln-H6-mgQ" secondAttribute="trailing" constant="16" id="8MZ-jl-SMn"/>
                                     <constraint firstItem="frW-7l-xgp" firstAttribute="centerX" secondItem="mOS-ck-zrg" secondAttribute="centerX" id="8rA-Gs-qca"/>
@@ -99,7 +99,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" name="Background"/>
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="mOS-ck-zrg" firstAttribute="centerX" secondItem="Xcx-h2-xeX" secondAttribute="centerX" id="Cfo-HK-xzr"/>
@@ -125,7 +125,7 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="-135.5" y="124.5"/>
+            <point key="canvasLocation" x="-136.80000000000001" y="123.68815592203899"/>
         </scene>
     </scenes>
     <resources>
@@ -133,8 +133,8 @@
         <namedColor name="Active Icon">
             <color red="0.0" green="0.0" blue="0.0" alpha="0.54000002145767212" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Active Icon">
-            <color red="0.0" green="0.0" blue="0.0" alpha="0.54000002150000004" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Background">
+            <color red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Base">
             <color red="0.23921568630000001" green="0.65490196079999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

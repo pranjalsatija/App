@@ -12,6 +12,9 @@
 		AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */; };
 		AF307BBB2018191B00145C18 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF307BBA2018191B00145C18 /* RoundButton.swift */; };
 		AF307BBD20181D1C00145C18 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF307BBC20181D1C00145C18 /* Icons.xcassets */; };
+		AF307BC9201838EB00145C18 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; };
+		AF307BCA201838EB00145C18 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; };
+		AF307BCB201838EB00145C18 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFA03D442015AC970033A87B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; };
 		AFA03D452015AC970033A87B /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */; };
@@ -80,6 +83,7 @@
 				AFDF0CB12015AC4100B04C8E /* Parse.framework in Embed Frameworks */,
 				AFA03D452015AC970033A87B /* Core.framework in Embed Frameworks */,
 				AFDF0CAF2015AC4100B04C8E /* Bolts.framework in Embed Frameworks */,
+				AF307BCB201838EB00145C18 /* Mapbox.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -92,6 +96,7 @@
 		AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyPINViewController.storyboard; sourceTree = "<group>"; };
 		AF307BBA2018191B00145C18 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AF307BBC20181D1C00145C18 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		AF307BC8201838EB00145C18 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreenViewController.storyboard; sourceTree = "<group>"; };
 		AFA03D502015B08C0033A87B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		AFA03D522015B1B10033A87B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -123,6 +128,8 @@
 				AFDF0CAE2015AC4100B04C8E /* Bolts.framework in Frameworks */,
 				AFA03D442015AC970033A87B /* Core.framework in Frameworks */,
 				AFDF0CAD2015AC2700B04C8E /* Parse.framework in Frameworks */,
+				AF307BC9201838EB00145C18 /* Mapbox.framework in Frameworks */,
+				AF307BCA201838EB00145C18 /* Mapbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +263,7 @@
 		AFDF0CA92015AC1000B04C8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF307BC8201838EB00145C18 /* Mapbox.framework */,
 				AFDF0CB32015AC7600B04C8E /* Core.xcodeproj */,
 				AFDF0CAA2015AC2700B04C8E /* Bolts.framework */,
 				AFDF0CAB2015AC2700B04C8E /* Parse.framework */,
@@ -283,6 +291,8 @@
 				AFDF0C7320159C5000B04C8E /* Frameworks */,
 				AFDF0C7420159C5000B04C8E /* Resources */,
 				AFDF0CB22015AC4100B04C8E /* Embed Frameworks */,
+				AF307BCC2018395800145C18 /* ShellScript */,
+				AF307BCD2018397700145C18 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -427,6 +437,35 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AF307BCC2018395800145C18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "bash \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapbox.framework/strip-frameworks.sh\"";
+		};
+		AF307BCD2018397700145C18 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AFDF0C7220159C5000B04C8E /* Sources */ = {
@@ -608,7 +647,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
-				FRAMEWORK_SEARCH_PATHS = "../Common\\ Frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"../Common\\ Frameworks",
+					"$(PROJECT_DIR)/Resources/Frameworks",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.App;
@@ -625,7 +667,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
-				FRAMEWORK_SEARCH_PATHS = "../Common\\ Frameworks/**";
+				FRAMEWORK_SEARCH_PATHS = (
+					"../Common\\ Frameworks",
+					"$(PROJECT_DIR)/Resources/Frameworks",
+				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.App;
@@ -642,7 +687,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
-				INFOPLIST_FILE = AppTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.AppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -659,7 +704,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
-				INFOPLIST_FILE = AppTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.AppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -675,7 +720,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
-				INFOPLIST_FILE = AppUITests/Info.plist;
+				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.AppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -691,7 +736,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
-				INFOPLIST_FILE = AppUITests/Info.plist;
+				INFOPLIST_FILE = "UI Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.AppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
