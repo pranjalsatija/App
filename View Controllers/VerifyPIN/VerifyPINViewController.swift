@@ -32,7 +32,12 @@ extension VerifyPINViewController {
             } else if error != nil {
                 self.showError()
             } else {
-                self.present(WalkthroughViewController.make(), animated: true)
+                let walkthrough = WalkthroughViewController.make()
+                walkthrough.onCompletion {
+                    walkthrough.present(MapViewController.make(), animated: true)
+                }
+
+                self.present(walkthrough, animated: true)
             }
         }
     }

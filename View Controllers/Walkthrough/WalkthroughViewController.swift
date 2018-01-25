@@ -6,10 +6,13 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
+import CoreLocation
 import UIKit
 
 final class WalkthroughViewController: UIPageViewController, ViewControllerMakeable {
     var pages: [UIViewController]!
+
+    private var completionHandler: (() -> Void)?
 }
 
 extension WalkthroughViewController {
@@ -18,10 +21,14 @@ extension WalkthroughViewController {
         let notificationPage = makeViewController(withIdentifier: "Walkthrough.Notifications") as! NotificationAccessPage
         notificationPage.onAuthorizationStatusChange(notificationAuthorizationStatusChanged)
 
+        //swiftlint:disable:next force_cast
+        let locationPage = makeViewController(withIdentifier: "Walkthrough.Location") as! LocationAccessPage
+        locationPage.onAuthorizationStatusChange(locationAuthorizationStatusChanged)
+
         pages = [
             makeViewController(withIdentifier: "Walkthrough.Welcome"),
             notificationPage,
-            makeViewController(withIdentifier: "Walkthrough.Location")
+            locationPage
         ]
 
         setViewControllers([pages.first!], direction: .forward, animated: true)
@@ -35,10 +42,32 @@ extension WalkthroughViewController {
         }
 
         if index >= pages.endIndex - 1 {
-            return
+            completionHandler?()
         } else {
             setViewControllers([pages[index + 1]], direction: .forward, animated: true)
         }
+    }
+
+    func locationAuthorizationStatusChanged(status: CLAuthorizationStatus) {
+        guard status != .notDetermined else {
+            return
+        }
+
+        guard let first = viewControllers?.first, let index = pages.index(of: first) else {
+            return
+        }
+
+        if index >= pages.endIndex - 1 {
+            completionHandler?()
+        } else {
+            setViewControllers([pages[index + 1]], direction: .forward, animated: true)
+        }
+    }
+}
+
+extension WalkthroughViewController {
+    func onCompletion(_ block: @escaping () -> Void) {
+        completionHandler = block
     }
 }
 
@@ -48,35 +77,5 @@ extension WalkthroughViewController {
         let storyboard = UIStoryboard(name: storyboardID, bundle: .main)
         let viewController = storyboard.instantiateViewController(withIdentifier: identifier)
         return viewController
-    }
-}
-
-extension WalkthroughViewController: UIPageViewControllerDataSource {
-    func pageViewController(_ pageViewController: UIPageViewController,
-                            viewControllerBefore viewController: UIViewController) -> UIViewController? {
-
-        guard let index = pages.index(of: viewController) else {
-            return nil
-        }
-
-        if index <= pages.startIndex {
-            return nil
-        } else {
-            return pages[index - 1]
-        }
-    }
-
-    func pageViewController(_ pageViewController: UIPageViewController,
-                            viewControllerAfter viewController: UIViewController) -> UIViewController? {
-
-        guard let index = pages.index(of: viewController) else {
-            return nil
-        }
-
-        if index >= pages.endIndex - 1 {
-            return nil
-        } else {
-            return pages[index + 1]
-        }
     }
 }

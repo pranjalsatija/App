@@ -17,6 +17,10 @@
 		AF307BCB201838EB00145C18 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */; };
 		AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5F2019326300443157 /* NotificationAccessPage.swift */; };
+		AF9C7C772019B2350040BF13 /* LocationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */; };
+		AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C7A2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift */; };
+		AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */; };
+		AF9C7C7F2019C1AD0040BF13 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9C7C7E2019C1AD0040BF13 /* MapViewController.storyboard */; };
 		AFA03D442015AC970033A87B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; };
 		AFA03D452015AC970033A87B /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */; };
@@ -104,6 +108,10 @@
 		AF307BC8201838EB00145C18 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
 		AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MGLCoordinateBounds+GeoBox.swift"; sourceTree = "<group>"; };
 		AF822B5F2019326300443157 /* NotificationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAccessPage.swift; sourceTree = "<group>"; };
+		AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccessPage.swift; sourceTree = "<group>"; };
+		AF9C7C7A2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewControllerPagingManager.swift; sourceTree = "<group>"; };
+		AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Controllers/Map/MapViewController.swift"; sourceTree = SOURCE_ROOT; };
+		AF9C7C7E2019C1AD0040BF13 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MapViewController.storyboard; path = "View Controllers/Map/MapViewController.storyboard"; sourceTree = SOURCE_ROOT; };
 		AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreenViewController.storyboard; sourceTree = "<group>"; };
 		AFA03D502015B08C0033A87B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		AFA03D522015B1B10033A87B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -183,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				AF822B5F2019326300443157 /* NotificationAccessPage.swift */,
+				AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -193,6 +202,16 @@
 				AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */,
 			);
 			path = Convenience;
+			sourceTree = "<group>";
+		};
+		AF9C7C792019C0560040BF13 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				AF9C7C7E2019C1AD0040BF13 /* MapViewController.storyboard */,
+				AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */,
+			);
+			name = Map;
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		AFA03D4A2015AF880033A87B /* SplashScreen */ = {
@@ -221,6 +240,7 @@
 			children = (
 				AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */,
 				AFAD5319201840E500795D69 /* WalkthroughViewController.swift */,
+				AF9C7C7A2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift */,
 				AF822B5820192CAB00443157 /* Pages */,
 			);
 			path = Walkthrough;
@@ -282,6 +302,7 @@
 				AFA03D4A2015AF880033A87B /* SplashScreen */,
 				AF077E382017F7430040D2DE /* VerifyPIN */,
 				AFAD5318201840D500795D69 /* Walkthrough */,
+				AF9C7C792019C0560040BF13 /* Map */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -459,6 +480,7 @@
 				AFAD532220184BF500795D69 /* WalkthroughViewController.storyboard in Resources */,
 				AF307BBD20181D1C00145C18 /* Icons.xcassets in Resources */,
 				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
+				AF9C7C7F2019C1AD0040BF13 /* MapViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +541,8 @@
 				AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */,
 				AFAD531A201840E500795D69 /* WalkthroughViewController.swift in Sources */,
 				AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */,
+				AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */,
+				AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */,
 				AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */,
 				AFF4AC9B20171AED00917BF7 /* Colors.swift in Sources */,
 				AFFDD56E2016B73E00FC1058 /* ViewControllerMakeable.swift in Sources */,
@@ -526,6 +550,7 @@
 				AFAD531C201841C300795D69 /* Map.swift in Sources */,
 				AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */,
 				AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */,
+				AF9C7C772019B2350040BF13 /* LocationAccessPage.swift in Sources */,
 				AFFDD57F2017039C00FC1058 /* ContainerView.swift in Sources */,
 				AFA03D532015B1B10033A87B /* TextField.swift in Sources */,
 			);

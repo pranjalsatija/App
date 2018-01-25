@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         Core.initialize(withAppID: "mark", serverURL: "https://api.mark.events/parse")
 
         if User.current != nil {
-            //window?.rootViewController = MapViewController.make()
+            window?.rootViewController = MapViewController.make()
         }
     }
 }
