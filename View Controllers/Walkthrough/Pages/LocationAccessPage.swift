@@ -12,6 +12,11 @@ import UIKit
 class LocationAccessPage: UIViewController {
     typealias AuthorizationStatusChangeHandler = (CLAuthorizationStatus) -> Void
     private var authorizationStatusChangeHandler: AuthorizationStatusChangeHandler?
+
+
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var messageLabel: UILabel!
+    @IBOutlet var enableLocationAccessButton: UIButton!
 }
 
 extension LocationAccessPage {

@@ -24,4 +24,10 @@ extension String {
         static let invalidPIN = "Invalid PIN"
         static let invalidPhoneNumber = "Invalid Phone Number"
     }
+
+    struct StatusMessage {
+        static let error = "Error"
+        static let loading = "Loading..."
+        static let ready = "mark"
+    }
 }

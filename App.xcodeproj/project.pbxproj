@@ -15,12 +15,19 @@
 		AF307BC9201838EB00145C18 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; };
 		AF307BCA201838EB00145C18 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; };
 		AF307BCB201838EB00145C18 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF307BC8201838EB00145C18 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF397A71201AECF1008E6969 /* ClusterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF397A70201AECF1008E6969 /* ClusterKit.framework */; };
+		AF397A75201AED68008E6969 /* MGLMapView+ClusterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AF397A74201AED68008E6969 /* MGLMapView+ClusterKit.m */; };
+		AF397A78201AF0E4008E6969 /* EventAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF397A77201AF0E4008E6969 /* EventAnnotationView.swift */; };
+		AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CC44201AE60B007193CC /* EventAnnotation.swift */; };
 		AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */; };
 		AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5F2019326300443157 /* NotificationAccessPage.swift */; };
 		AF9C7C772019B2350040BF13 /* LocationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */; };
 		AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C7A2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift */; };
 		AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */; };
 		AF9C7C7F2019C1AD0040BF13 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF9C7C7E2019C1AD0040BF13 /* MapViewController.storyboard */; };
+		AF9C7C83201AA74B0040BF13 /* MapViewControllerMapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C82201AA74B0040BF13 /* MapViewControllerMapManager.swift */; };
+		AF9C7CC1201AA99B0040BF13 /* UIView+Rounded Corners.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7CC0201AA99B0040BF13 /* UIView+Rounded Corners.swift */; };
+		AF9C7CC3201AE1B20040BF13 /* RaisedVisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7CC2201AE1B20040BF13 /* RaisedVisualEffectView.swift */; };
 		AFA03D442015AC970033A87B /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; };
 		AFA03D452015AC970033A87B /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CB92015AC7600B04C8E /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */; };
@@ -38,6 +45,9 @@
 		AFDF0CB12015AC4100B04C8E /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFDF0CAB2015AC2700B04C8E /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFEC3A5E2017AC8400375989 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFEC3A5D2017AC8400375989 /* Strings.swift */; };
 		AFF4AC9B20171AED00917BF7 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF4AC9A20171AED00917BF7 /* Colors.swift */; };
+		AFFD986B201AFAFB006F40FE /* ClusterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF397A70201AECF1008E6969 /* ClusterKit.framework */; };
+		AFFD986C201AFAFB006F40FE /* ClusterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF397A70201AECF1008E6969 /* ClusterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFFD986F201BE013006F40FE /* EventClusterAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFD986E201BE013006F40FE /* EventClusterAnnotationView.swift */; };
 		AFFDD56E2016B73E00FC1058 /* ViewControllerMakeable.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */; };
 		AFFDD5752016B80000FC1058 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD5742016B80000FC1058 /* SplashScreenViewController.swift */; };
 		AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFFDD57C201700D700FC1058 /* UIAlertAction Extension.swift */; };
@@ -90,6 +100,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AFDF0CB12015AC4100B04C8E /* Parse.framework in Embed Frameworks */,
+				AFFD986C201AFAFB006F40FE /* ClusterKit.framework in Embed Frameworks */,
 				AFA03D452015AC970033A87B /* Core.framework in Embed Frameworks */,
 				AFDF0CAF2015AC4100B04C8E /* Bolts.framework in Embed Frameworks */,
 				AF307BCB201838EB00145C18 /* Mapbox.framework in Embed Frameworks */,
@@ -106,12 +117,21 @@
 		AF307BBA2018191B00145C18 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		AF307BBC20181D1C00145C18 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF307BC8201838EB00145C18 /* Mapbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Mapbox.framework; sourceTree = "<group>"; };
+		AF397A70201AECF1008E6969 /* ClusterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ClusterKit.framework; sourceTree = "<group>"; };
+		AF397A73201AED68008E6969 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
+		AF397A74201AED68008E6969 /* MGLMapView+ClusterKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "MGLMapView+ClusterKit.m"; sourceTree = "<group>"; };
+		AF397A76201AED7E008E6969 /* MGLMapView+ClusterKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MGLMapView+ClusterKit.h"; sourceTree = "<group>"; };
+		AF397A77201AF0E4008E6969 /* EventAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnnotationView.swift; sourceTree = "<group>"; };
+		AF78CC44201AE60B007193CC /* EventAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnnotation.swift; sourceTree = "<group>"; };
 		AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MGLCoordinateBounds+GeoBox.swift"; sourceTree = "<group>"; };
 		AF822B5F2019326300443157 /* NotificationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAccessPage.swift; sourceTree = "<group>"; };
 		AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccessPage.swift; sourceTree = "<group>"; };
 		AF9C7C7A2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewControllerPagingManager.swift; sourceTree = "<group>"; };
 		AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Controllers/Map/MapViewController.swift"; sourceTree = SOURCE_ROOT; };
 		AF9C7C7E2019C1AD0040BF13 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = MapViewController.storyboard; path = "View Controllers/Map/MapViewController.storyboard"; sourceTree = SOURCE_ROOT; };
+		AF9C7C82201AA74B0040BF13 /* MapViewControllerMapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewControllerMapManager.swift; path = "View Controllers/Map/MapViewControllerMapManager.swift"; sourceTree = SOURCE_ROOT; };
+		AF9C7CC0201AA99B0040BF13 /* UIView+Rounded Corners.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Rounded Corners.swift"; sourceTree = "<group>"; };
+		AF9C7CC2201AE1B20040BF13 /* RaisedVisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaisedVisualEffectView.swift; sourceTree = "<group>"; };
 		AFA03D4B2015AF9F0033A87B /* SplashScreenViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreenViewController.storyboard; sourceTree = "<group>"; };
 		AFA03D502015B08C0033A87B /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		AFA03D522015B1B10033A87B /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
@@ -132,6 +152,7 @@
 		AFDF0CB32015AC7600B04C8E /* Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Core.xcodeproj; path = ../../../Core/Core.xcodeproj; sourceTree = "<group>"; };
 		AFEC3A5D2017AC8400375989 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		AFF4AC9A20171AED00917BF7 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		AFFD986E201BE013006F40FE /* EventClusterAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventClusterAnnotationView.swift; sourceTree = "<group>"; };
 		AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerMakeable.swift; sourceTree = "<group>"; };
 		AFFDD5742016B80000FC1058 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		AFFDD57C201700D700FC1058 /* UIAlertAction Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertAction Extension.swift"; sourceTree = "<group>"; };
@@ -143,11 +164,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF397A71201AECF1008E6969 /* ClusterKit.framework in Frameworks */,
 				AFDF0CAE2015AC4100B04C8E /* Bolts.framework in Frameworks */,
 				AFA03D442015AC970033A87B /* Core.framework in Frameworks */,
 				AFDF0CAD2015AC2700B04C8E /* Parse.framework in Frameworks */,
 				AF307BC9201838EB00145C18 /* Mapbox.framework in Frameworks */,
 				AF307BCA201838EB00145C18 /* Mapbox.framework in Frameworks */,
+				AFFD986B201AFAFB006F40FE /* ClusterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -187,6 +210,27 @@
 			path = "View Controller Extensions";
 			sourceTree = "<group>";
 		};
+		AF397A72201AED3F008E6969 /* MGLMapView+ClusterKit */ = {
+			isa = PBXGroup;
+			children = (
+				AF397A76201AED7E008E6969 /* MGLMapView+ClusterKit.h */,
+				AF397A74201AED68008E6969 /* MGLMapView+ClusterKit.m */,
+			);
+			path = "MGLMapView+ClusterKit";
+			sourceTree = "<group>";
+		};
+		AF78CC41201AE5E3007193CC /* Map Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				AF78CC44201AE60B007193CC /* EventAnnotation.swift */,
+				AF397A77201AF0E4008E6969 /* EventAnnotationView.swift */,
+				AFFD986E201BE013006F40FE /* EventClusterAnnotationView.swift */,
+				AFAD531B201841C300795D69 /* Map.swift */,
+				AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */,
+			);
+			path = "Map Utilities";
+			sourceTree = "<group>";
+		};
 		AF822B5820192CAB00443157 /* Pages */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,22 +240,14 @@
 			path = Pages;
 			sourceTree = "<group>";
 		};
-		AF822B5C2019316200443157 /* Convenience */ = {
-			isa = PBXGroup;
-			children = (
-				AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */,
-			);
-			path = Convenience;
-			sourceTree = "<group>";
-		};
 		AF9C7C792019C0560040BF13 /* Map */ = {
 			isa = PBXGroup;
 			children = (
 				AF9C7C7E2019C1AD0040BF13 /* MapViewController.storyboard */,
 				AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */,
+				AF9C7C82201AA74B0040BF13 /* MapViewControllerMapManager.swift */,
 			);
-			name = Map;
-			path = "New Group";
+			path = Map;
 			sourceTree = "<group>";
 		};
 		AFA03D4A2015AF880033A87B /* SplashScreen */ = {
@@ -228,9 +264,10 @@
 			children = (
 				AFA03D502015B08C0033A87B /* Button.swift */,
 				AFFDD57E2017039C00FC1058 /* ContainerView.swift */,
-				AFAD531B201841C300795D69 /* Map.swift */,
+				AF9C7CC2201AE1B20040BF13 /* RaisedVisualEffectView.swift */,
 				AF307BBA2018191B00145C18 /* RoundButton.swift */,
 				AFA03D522015B1B10033A87B /* TextField.swift */,
+				AF9C7CC0201AA99B0040BF13 /* UIView+Rounded Corners.swift */,
 			);
 			path = "UI Components";
 			sourceTree = "<group>";
@@ -271,6 +308,7 @@
 		AFDF0C7820159C5000B04C8E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AF397A73201AED68008E6969 /* App-Bridging-Header.h */,
 				AFDF0CA92015AC1000B04C8E /* Frameworks */,
 				AFDF0C8020159C5100B04C8E /* Colors.xcassets */,
 				AF307BBC20181D1C00145C18 /* Icons.xcassets */,
@@ -312,7 +350,7 @@
 			children = (
 				AFDF0C7920159C5000B04C8E /* AppDelegate.swift */,
 				AFF4AC9A20171AED00917BF7 /* Colors.swift */,
-				AF822B5C2019316200443157 /* Convenience */,
+				AF78CC41201AE5E3007193CC /* Map Utilities */,
 				AFEC3A5D2017AC8400375989 /* Strings.swift */,
 				AF232698201713C700A9350E /* View Controller Extensions */,
 				AFA03D4F2015B0810033A87B /* UI Components */,
@@ -323,6 +361,8 @@
 		AFDF0CA92015AC1000B04C8E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF397A72201AED3F008E6969 /* MGLMapView+ClusterKit */,
+				AF397A70201AECF1008E6969 /* ClusterKit.framework */,
 				AF307BC8201838EB00145C18 /* Mapbox.framework */,
 				AFDF0CB32015AC7600B04C8E /* Core.xcodeproj */,
 				AFDF0CAA2015AC2700B04C8E /* Bolts.framework */,
@@ -412,6 +452,7 @@
 				TargetAttributes = {
 					AFDF0C7520159C5000B04C8E = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 					AFDF0C8920159C5100B04C8E = {
@@ -540,19 +581,26 @@
 				AFA03D512015B08C0033A87B /* Button.swift in Sources */,
 				AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */,
 				AFAD531A201840E500795D69 /* WalkthroughViewController.swift in Sources */,
+				AF9C7C83201AA74B0040BF13 /* MapViewControllerMapManager.swift in Sources */,
 				AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */,
+				AF397A75201AED68008E6969 /* MGLMapView+ClusterKit.m in Sources */,
 				AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */,
 				AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */,
 				AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */,
+				AFFD986F201BE013006F40FE /* EventClusterAnnotationView.swift in Sources */,
 				AFF4AC9B20171AED00917BF7 /* Colors.swift in Sources */,
 				AFFDD56E2016B73E00FC1058 /* ViewControllerMakeable.swift in Sources */,
 				AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */,
+				AF397A78201AF0E4008E6969 /* EventAnnotationView.swift in Sources */,
 				AFAD531C201841C300795D69 /* Map.swift in Sources */,
 				AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */,
+				AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */,
+				AF9C7CC1201AA99B0040BF13 /* UIView+Rounded Corners.swift in Sources */,
 				AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */,
 				AF9C7C772019B2350040BF13 /* LocationAccessPage.swift in Sources */,
 				AFFDD57F2017039C00FC1058 /* ContainerView.swift in Sources */,
 				AFA03D532015B1B10033A87B /* TextField.swift in Sources */,
+				AF9C7CC3201AE1B20040BF13 /* RaisedVisualEffectView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,16 +762,20 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"../Common\\ Frameworks",
 					"$(PROJECT_DIR)/Resources/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resources/App-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -734,16 +786,19 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X872NB7KGG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"../Common\\ Frameworks",
 					"$(PROJECT_DIR)/Resources/Frameworks",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = events.mark.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Resources/App-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

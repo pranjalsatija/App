@@ -49,7 +49,7 @@ extension WalkthroughViewController {
     }
 
     func locationAuthorizationStatusChanged(status: CLAuthorizationStatus) {
-        guard status != .notDetermined else {
+        guard status == .authorizedWhenInUse || status == .authorizedAlways else {
             return
         }
 

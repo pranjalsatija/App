@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Map View Controller-->
+        <!--Delegate-->
         <scene sceneID="5rn-Sf-P30">
             <objects>
                 <viewController storyboardIdentifier="MapViewController" id="pS2-ba-u50" customClass="MapViewController" customModule="App" customModuleProvider="target" sceneMemberID="viewController">
@@ -21,8 +21,63 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pzy-nY-YAX" customClass="Map" customModule="App" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l7C-9N-d41" customClass="RaisedVisualEffectView" customModule="App" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="xxj-Vd-Bi6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="68"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yK2-WV-7ue">
+                                                    <rect key="frame" x="0.0" y="12" width="375" height="56"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mark" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ea2-Ns-4aB">
+                                                            <rect key="frame" x="16" y="16" width="45" height="24"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                                            <color key="textColor" name="Base"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccN-Gp-lCp">
+                                                            <rect key="frame" x="323" y="0.0" width="44" height="56"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="44" id="of5-Fm-lL7"/>
+                                                            </constraints>
+                                                            <color key="tintColor" name="Active Icon"/>
+                                                            <state key="normal" image="currentLocation">
+                                                                <color key="titleColor" name="Active Icon"/>
+                                                            </state>
+                                                            <connections>
+                                                                <action selector="currentLocationButtonPressed" destination="pS2-ba-u50" eventType="touchUpInside" id="Ob4-pL-sWm"/>
+                                                            </connections>
+                                                        </button>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="ccN-Gp-lCp" secondAttribute="bottom" id="0gU-jE-YBe"/>
+                                                        <constraint firstAttribute="bottom" secondItem="ea2-Ns-4aB" secondAttribute="bottom" constant="16" id="4fF-3I-UaL"/>
+                                                        <constraint firstItem="ea2-Ns-4aB" firstAttribute="leading" secondItem="yK2-WV-7ue" secondAttribute="leading" constant="16" id="Bne-Rx-gJC"/>
+                                                        <constraint firstItem="ea2-Ns-4aB" firstAttribute="top" secondItem="yK2-WV-7ue" secondAttribute="top" constant="16" id="I6x-aV-hb6"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ccN-Gp-lCp" secondAttribute="trailing" constant="8" id="OIE-g5-LLD"/>
+                                                        <constraint firstItem="ccN-Gp-lCp" firstAttribute="top" secondItem="yK2-WV-7ue" secondAttribute="top" id="nek-K5-uFH"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yK2-WV-7ue" secondAttribute="trailing" id="0ES-ba-knr"/>
+                                                <constraint firstAttribute="bottom" secondItem="yK2-WV-7ue" secondAttribute="bottom" id="Nin-lh-kQ5"/>
+                                                <constraint firstItem="yK2-WV-7ue" firstAttribute="leading" secondItem="xxj-Vd-Bi6" secondAttribute="leading" id="oO7-cv-7uc"/>
+                                            </constraints>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                </subviews>
                                 <color key="backgroundColor" name="Background"/>
                                 <color key="tintColor" name="Base"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="l7C-9N-d41" secondAttribute="trailing" id="83G-7W-Odn"/>
+                                    <constraint firstItem="l7C-9N-d41" firstAttribute="leading" secondItem="pzy-nY-YAX" secondAttribute="leading" id="YBj-dA-Dhv"/>
+                                    <constraint firstItem="l7C-9N-d41" firstAttribute="top" secondItem="pzy-nY-YAX" secondAttribute="top" id="eqO-FT-HBL"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="string" keyPath="styleURL__" value="mapbox://styles/pranjalsatija123/cjcsk1dum07mo2rp9xoddnczy"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="shouldHideTelemetryInfo" value="YES"/>
@@ -33,24 +88,36 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showsUserLocation" value="YES"/>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="showsHeading" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="pS2-ba-u50" id="40Q-2k-Vn3"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" name="Background"/>
                         <constraints>
                             <constraint firstItem="pzy-nY-YAX" firstAttribute="trailing" secondItem="Wzo-r3-5aX" secondAttribute="trailing" id="1MZ-dh-aIx"/>
                             <constraint firstItem="pzy-nY-YAX" firstAttribute="top" secondItem="bvP-Oc-OZJ" secondAttribute="top" id="1Sb-Xk-Jq7"/>
+                            <constraint firstItem="Wzo-r3-5aX" firstAttribute="top" secondItem="yK2-WV-7ue" secondAttribute="top" constant="8" id="eQ8-dG-PP0"/>
                             <constraint firstItem="Wzo-r3-5aX" firstAttribute="bottom" secondItem="pzy-nY-YAX" secondAttribute="bottom" id="ohq-vL-lxF"/>
                             <constraint firstItem="pzy-nY-YAX" firstAttribute="leading" secondItem="Wzo-r3-5aX" secondAttribute="leading" id="ssv-TB-Phy"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wzo-r3-5aX"/>
                     </view>
+                    <connections>
+                        <outlet property="map" destination="pzy-nY-YAX" id="ThX-Br-L7h"/>
+                        <outlet property="statusLabel" destination="ea2-Ns-4aB" id="jPE-bP-7lH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xci-Dh-58e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1180" y="-22"/>
+            <point key="canvasLocation" x="1180" y="-22.03898050974513"/>
         </scene>
     </scenes>
     <resources>
+        <image name="currentLocation" width="24" height="24"/>
+        <namedColor name="Active Icon">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.54000002145767212" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Background">
             <color red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
