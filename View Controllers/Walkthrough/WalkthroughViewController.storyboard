@@ -100,7 +100,7 @@ Swipe to continue.</string>
                                 </userDefinedRuntimeAttributes>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="Background"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="J5u-1j-4qj" firstAttribute="bottom" secondItem="sUY-EH-acO" secondAttribute="bottom" id="EnP-lm-kQD"/>
                             <constraint firstItem="T5a-7K-MYe" firstAttribute="trailing" secondItem="sUY-EH-acO" secondAttribute="trailing" id="UNP-fQ-Bh4"/>
@@ -140,7 +140,7 @@ Swipe to continue.</string>
                                         <color key="textColor" name="Primary Text"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nE-EM-jKu" customClass="Button" customModule="App" customModuleProvider="target">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0nE-EM-jKu" customClass="Button" customModule="UI">
                                         <rect key="frame" x="44" y="94.5" width="193" height="34"/>
                                         <color key="backgroundColor" name="Base"/>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -166,7 +166,7 @@ Swipe to continue.</string>
                                     <constraint firstItem="YCP-Q2-U2I" firstAttribute="centerX" secondItem="Hmn-WC-Qhm" secondAttribute="centerX" id="mRk-k4-WXw"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSQ-PE-AFa" customClass="Button" customModule="App" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vSQ-PE-AFa" customClass="Button" customModule="UI">
                                 <rect key="frame" x="129" y="625" width="118" height="34"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -221,7 +221,7 @@ Swipe to continue.</string>
                                                 <color key="textColor" name="Primary Text"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3l-8n-SjQ" customClass="Button" customModule="App" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3l-8n-SjQ" customClass="Button" customModule="UI">
                                                 <rect key="frame" x="32" y="77.5" width="218" height="34"/>
                                                 <color key="backgroundColor" name="Base"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
@@ -256,7 +256,7 @@ Swipe to continue.</string>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4Yn-bF-rln" firstAttribute="trailing" secondItem="Aew-KZ-ZWx" secondAttribute="trailing" id="8GD-8a-DFP"/>
                             <constraint firstItem="Aew-KZ-ZWx" firstAttribute="top" secondItem="DGE-bO-4EJ" secondAttribute="top" id="EbD-lz-XGM"/>
@@ -265,6 +265,11 @@ Swipe to continue.</string>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4Yn-bF-rln"/>
                     </view>
+                    <connections>
+                        <outlet property="enableLocationAccessButton" destination="C3l-8n-SjQ" id="T4t-EI-m2i"/>
+                        <outlet property="messageLabel" destination="ZxH-qA-4F1" id="ThN-cH-uCm"/>
+                        <outlet property="titleLabel" destination="v1g-1b-Sdp" id="dUe-7Q-DCg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c31-pv-L1H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

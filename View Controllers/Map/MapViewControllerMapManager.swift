@@ -35,9 +35,24 @@ extension MapViewControllerMapManager: MGLMapViewDelegate {
 
     func mapView(_ mapView: MGLMapView, didSelect annotation: MGLAnnotation) {
         if let cluster = annotation as? CKCluster {
-            print(cluster.annotations.flatMap { $0 as? EventAnnotation }.map { $0.event.title })
-        } else if let event = annotation as? EventAnnotationView {
-            print(event.event.title)
+            let events = cluster.annotations.flatMap { ($0 as? EventAnnotation)?.event }
+
+            if events.count == 1 {
+                mapViewController.present(EventDetailViewController.make({
+                    $0.event = events.first
+                }), animated: true)
+            } else {
+                let camera = mapView.cameraThatFitsCluster(cluster, edgePadding: UIEdgeInsets(top: 48, left: 48, bottom: 48, right: 48))
+                mapView.setCamera(camera, animated: true)
+            }
+        } else if let userLocation = annotation as? MGLUserLocation {
+            let closestEvent = mapViewController.events.sorted {
+                $0.location.distance(from: userLocation.coordinate) < $1.location.distance(from: userLocation.coordinate)
+            }.first
+
+            mapViewController.present(EventDetailViewController.make({
+                $0.event = closestEvent
+            }), animated: true)
         }
     }
 

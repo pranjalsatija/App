@@ -8,7 +8,7 @@
 
 import Core
 import Mapbox
-import UIKit
+import UI
 
 final class MapViewController: UIViewController, ViewControllerMakeable {
     var events = [Event]()

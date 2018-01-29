@@ -8,7 +8,7 @@
 
 import Core
 import Mapbox
-import UIKit
+import UI
 
 class EventClusterAnnotationView: MGLAnnotationView {
     static let reuseIdentifier = "EventClusterAnnotationView"
@@ -26,21 +26,20 @@ extension EventClusterAnnotationView {
     func configure() {
         func configureFrame() {
             backgroundColor = .clear
-            clipsToBounds = true
             frame.size = CGSize(width: 44, height: 44)
-            layer.cornerRadius = min(frame.width, frame.height) / 2
-            layer.drawsAsynchronously = true
             layer.shadowColor = UIColor.black.cgColor
-            layer.shadowOffset = CGSize(width: 1, height: 1)
-            layer.shadowOpacity = 0.1
-            layer.shadowRadius = 3
+            layer.shadowOffset = CGSize(width: 3, height: 3)
+            layer.shadowOpacity = 0.25
+            layer.shadowRadius = 4
         }
 
         func configureCountLabel() {
             countLabel = UILabel()
             countLabel.backgroundColor = .base
+            countLabel.clipsToBounds = true
             countLabel.font = UIFont.systemFont(ofSize: 14, weight: .semibold)
             countLabel.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
+            countLabel.layer.cornerRadius = min(frame.width, frame.height) / 2
             countLabel.text = String(count)
             countLabel.textAlignment = .center
             countLabel.textColor = .white

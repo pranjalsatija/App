@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
-import UIKit
+import UI
 
 protocol ViewControllerMakeable {
     static func make(_ block: ((Self) -> Void)?) -> Self

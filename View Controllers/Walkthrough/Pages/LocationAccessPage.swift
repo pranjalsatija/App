@@ -7,11 +7,12 @@
 //
 
 import Core
-import UIKit
+import UI
 
 class LocationAccessPage: UIViewController {
     typealias AuthorizationStatusChangeHandler = (CLAuthorizationStatus) -> Void
     private var authorizationStatusChangeHandler: AuthorizationStatusChangeHandler?
+    private var shouldOpenSettings = false
 
 
     @IBOutlet var titleLabel: UILabel!
@@ -25,7 +26,18 @@ extension LocationAccessPage {
     }
 
     @IBAction func enableLocationButtonPressed() {
+        guard !shouldOpenSettings else {
+            UIApplication.shared.openSettings()
+            return
+        }
+
         LocationManager.shared.requestWhenInUseAuthorization {(status) in
+            if status == .denied {
+                self.titleLabel.text = String.TitleText.locationRequired
+                self.messageLabel.text = String.MessageText.locationRequired
+                self.shouldOpenSettings = true
+            }
+
             self.authorizationStatusChangeHandler?(status)
         }
     }

@@ -7,7 +7,7 @@
 //
 
 import Core
-import UIKit
+import UI
 
 final class VerifyPINViewController: UIViewController, ViewControllerMakeable {
     var user: User!

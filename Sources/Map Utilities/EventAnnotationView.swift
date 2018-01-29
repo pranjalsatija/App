@@ -8,7 +8,7 @@
 
 import Core
 import Mapbox
-import UIKit
+import UI
 
 class EventAnnotationView: MGLAnnotationView {
     static let reuseIdentifier = "EventAnnotationView"
@@ -29,8 +29,8 @@ extension EventAnnotationView {
             frame.size = CGSize(width: 44, height: 44)
             layer.shadowColor = UIColor.black.cgColor
             layer.shadowOffset = CGSize(width: 3, height: 3)
-            layer.shadowOpacity = 0.3
-            layer.shadowRadius = 3
+            layer.shadowOpacity = 0.25
+            layer.shadowRadius = 4
         }
 
         func configureCategoryIconImageView() {

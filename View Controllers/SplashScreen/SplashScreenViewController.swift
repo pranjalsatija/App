@@ -7,7 +7,7 @@
 //
 
 import Core
-import UIKit
+import UI
 
 final class SplashScreenViewController: UIViewController, ViewControllerMakeable {
     @IBOutlet var getStartedButton: Button!

@@ -20,9 +20,21 @@ extension String {
         static let errorOccurred = "Error"
     }
 
+    struct ButtonText {
+        static let openSettings = "OPEN SETTINGS"
+    }
+
+    struct MessageText {
+        static let locationRequired = "Your location is required to use mark. Please use Settings to enable location access."
+    }
+
     struct PlaceholderErrorText {
         static let invalidPIN = "Invalid PIN"
         static let invalidPhoneNumber = "Invalid Phone Number"
+    }
+
+    struct TitleText {
+        static let locationRequired = "Location Required"
     }
 
     struct StatusMessage {

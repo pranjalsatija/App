@@ -7,7 +7,7 @@
 //
 
 import Core
-import UIKit
+import UI
 
 class NotificationAccessPage: UIViewController {
     typealias AuthorizationStatusChangeHandler = (Swift.Error?, Bool) -> Void

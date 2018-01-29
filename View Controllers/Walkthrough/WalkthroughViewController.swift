@@ -7,7 +7,7 @@
 //
 
 import CoreLocation
-import UIKit
+import UI
 
 final class WalkthroughViewController: UIPageViewController, ViewControllerMakeable {
     var pages: [UIViewController]!

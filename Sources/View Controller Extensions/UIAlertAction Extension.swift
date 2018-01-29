@@ -6,7 +6,7 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
-import UIKit
+import UI
 
 extension UIAlertAction {
     static func dismiss(_ alert: UIAlertController) -> UIAlertAction {
