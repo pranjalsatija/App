@@ -24,7 +24,19 @@
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pP-Y3-bdh" customClass="Card" customModule="UI">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="612"/>
+                                        <subviews>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NeR-Uj-7fx" customClass="TableView" customModule="UI">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="587"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </tableView>
+                                        </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="NeR-Uj-7fx" secondAttribute="bottom" constant="25" id="Cg1-B2-seX"/>
+                                            <constraint firstItem="NeR-Uj-7fx" firstAttribute="top" secondItem="4pP-Y3-bdh" secondAttribute="top" id="TNn-GR-7Ho"/>
+                                            <constraint firstItem="NeR-Uj-7fx" firstAttribute="leading" secondItem="4pP-Y3-bdh" secondAttribute="leading" id="iXS-8e-7LP"/>
+                                            <constraint firstAttribute="trailing" secondItem="NeR-Uj-7fx" secondAttribute="trailing" id="j4K-3A-Eet"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -51,20 +63,35 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Event Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2vU-e0-il4">
-                                        <rect key="frame" x="60" y="18.5" width="307" height="24"/>
+                                        <rect key="frame" x="60" y="18.5" width="255" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-OQ-TKS" customClass="Button" customModule="UI">
+                                        <rect key="frame" x="323" y="8" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="8YJ-NU-upj"/>
+                                            <constraint firstAttribute="width" constant="44" id="ADk-hT-qhg"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="report"/>
+                                        <connections>
+                                            <action selector="reportButtonPressed" destination="PnN-je-P4u" eventType="touchUpInside" id="wiw-QY-rR9"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="vVb-OQ-TKS" secondAttribute="bottom" constant="8" id="03b-lI-iNP"/>
                                     <constraint firstItem="2vU-e0-il4" firstAttribute="centerY" secondItem="elU-yI-9gp" secondAttribute="centerY" id="0fx-Cz-Obm"/>
                                     <constraint firstItem="pYu-kB-MHL" firstAttribute="top" secondItem="elU-yI-9gp" secondAttribute="top" constant="8" id="4eP-T7-5lX"/>
                                     <constraint firstItem="pYu-kB-MHL" firstAttribute="leading" secondItem="elU-yI-9gp" secondAttribute="leading" constant="8" id="9Ka-8r-QMH"/>
                                     <constraint firstItem="2vU-e0-il4" firstAttribute="leading" secondItem="pYu-kB-MHL" secondAttribute="trailing" constant="8" id="Bqh-F4-ylC"/>
                                     <constraint firstAttribute="bottom" secondItem="pYu-kB-MHL" secondAttribute="bottom" constant="8" id="Nh4-LS-ORg"/>
-                                    <constraint firstAttribute="trailing" secondItem="2vU-e0-il4" secondAttribute="trailing" constant="8" id="kke-B3-bbw"/>
+                                    <constraint firstItem="vVb-OQ-TKS" firstAttribute="leading" secondItem="2vU-e0-il4" secondAttribute="trailing" constant="8" id="fJX-Jn-4mm"/>
+                                    <constraint firstItem="vVb-OQ-TKS" firstAttribute="top" secondItem="elU-yI-9gp" secondAttribute="top" constant="8" id="oGi-aa-iG0"/>
+                                    <constraint firstAttribute="trailing" secondItem="vVb-OQ-TKS" secondAttribute="trailing" constant="8" id="tdC-Nx-YWx"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -81,6 +108,7 @@
                         <viewLayoutGuide key="safeArea" id="eoP-jb-8T7"/>
                     </view>
                     <connections>
+                        <outlet property="eventDetailTableView" destination="NeR-Uj-7fx" id="4gx-0y-Z8w"/>
                         <outlet property="titleLabel" destination="2vU-e0-il4" id="4E3-Wr-zes"/>
                     </connections>
                 </viewController>
@@ -91,6 +119,7 @@
     </scenes>
     <resources>
         <image name="dismiss" width="24" height="24"/>
+        <image name="report" width="24" height="24"/>
         <namedColor name="Base">
             <color red="0.23921568627450981" green="0.65490196078431373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

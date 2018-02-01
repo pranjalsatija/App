@@ -8,20 +8,33 @@
 
 // MARK: UIAlertController
 extension String {
+    struct ActionSheetMessage {
+        static let report = "Please pick a reason for reporting this event."
+    }
+
+    struct ActionSheetTitle {
+        static let report = "Report Event"
+    }
+
     struct AlertActionTitle {
         static let dismiss = "Dismiss"
     }
 
     struct AlertMessage {
         static let errorOccurred = "An error occurred."
+        static let eventReported = "Thank you for reporting this event. Someone from our content moderation team has been alerted."
     }
 
     struct AlertTitle {
         static let errorOccurred = "Error"
+        static let eventReported = "Event Reported"
     }
 
     struct ButtonText {
+        static let getDirections = "GET DIRECTIONS"
+        static let inviteFriends = "INVITE FRIENDS"
         static let openSettings = "OPEN SETTINGS"
+        static let shareEvent = "SHARE EVENT"
     }
 
     struct MessageText {

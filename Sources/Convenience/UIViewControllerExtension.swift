@@ -17,9 +17,10 @@ extension UIViewController {
         view.endEditing(true)
     }
 
-    func showAlert(withTitle title: String, message: String, actions: [UIAlertAction]) {
+    func showAlert(withTitle title: String, message: String, actions: [UIAlertAction] = []) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         actions.forEach(alert.addAction)
+        alert.addAction(.dismiss(alert))
         self.present(alert, animated: true, completion: nil)
     }
 

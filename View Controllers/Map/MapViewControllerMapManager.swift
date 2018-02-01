@@ -46,13 +46,13 @@ extension MapViewControllerMapManager: MGLMapViewDelegate {
                 mapView.setCamera(camera, animated: true)
             }
         } else if let userLocation = annotation as? MGLUserLocation {
-            let closestEvent = mapViewController.events.sorted {
-                $0.location.distance(from: userLocation.coordinate) < $1.location.distance(from: userLocation.coordinate)
+            let closestAnnotation = mapView.annotations?.sorted {
+                $0.coordinate.distance(from: userLocation.coordinate) < $1.coordinate.distance(from: userLocation.coordinate)
             }.first
 
-            mapViewController.present(EventDetailViewController.make({
-                $0.event = closestEvent
-            }), animated: true)
+            if let closestAnnotation = closestAnnotation {
+                self.mapView(mapView, didSelect: closestAnnotation)
+            }
         }
     }
 

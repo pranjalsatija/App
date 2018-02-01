@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */; };
+		AF21DDDD2020494B006543C1 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF21DDDC2020494B006543C1 /* Icons.xcassets */; };
+		AF21DDDF20204955006543C1 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DDDE20204955006543C1 /* Icon.swift */; };
 		AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF307BB62018148600145C18 /* UIViewControllerExtension.swift */; };
 		AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */; };
-		AF307BBD20181D1C00145C18 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF307BBC20181D1C00145C18 /* Icons.xcassets */; };
 		AF337A27201C010E004F8EF0 /* EventDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF337A26201C010E004F8EF0 /* EventDetailViewController.storyboard */; };
 		AF397A78201AF0E4008E6969 /* EventAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF397A77201AF0E4008E6969 /* EventAnnotationView.swift */; };
 		AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CC44201AE60B007193CC /* EventAnnotation.swift */; };
@@ -44,6 +45,9 @@
 		AFAE91C5201E67020034B7FD /* ClusterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */; };
 		AFAE91C6201E67020034B7FD /* ClusterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFBEB4EE201C03CF0025D5EF /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB4ED201C03CF0025D5EF /* EventDetailViewController.swift */; };
+		AFC7AEEE2020360C0072566B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; };
+		AFC7AEF120203A540072566B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; };
+		AFC7AEF220203A540072566B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF0C7920159C5000B04C8E /* AppDelegate.swift */; };
 		AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8020159C5100B04C8E /* Colors.xcassets */; };
 		AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8220159C5100B04C8E /* LaunchScreen.storyboard */; };
@@ -81,6 +85,7 @@
 				AFAE91C6201E67020034B7FD /* ClusterKit.framework in Embed Frameworks */,
 				AF89DEE4201D6D3600866FF9 /* Mapbox.framework in Embed Frameworks */,
 				AF89DEDB201D6C4C00866FF9 /* Bolts.framework in Embed Frameworks */,
+				AFC7AEF220203A540072566B /* SnapKit.framework in Embed Frameworks */,
 				AF89DECF201D6BBE00866FF9 /* Core.framework in Embed Frameworks */,
 				AF89DED1201D6BBE00866FF9 /* UI.framework in Embed Frameworks */,
 				AF89DEDD201D6C4C00866FF9 /* Parse.framework in Embed Frameworks */,
@@ -92,9 +97,10 @@
 
 /* Begin PBXFileReference section */
 		AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPINViewController.swift; sourceTree = "<group>"; };
+		AF21DDDC2020494B006543C1 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		AF21DDDE20204955006543C1 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		AF307BB62018148600145C18 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyPINViewController.storyboard; sourceTree = "<group>"; };
-		AF307BBC20181D1C00145C18 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF337A26201C010E004F8EF0 /* EventDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetailViewController.storyboard; sourceTree = "<group>"; };
 		AF397A73201AED68008E6969 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		AF397A77201AF0E4008E6969 /* EventAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnnotationView.swift; sourceTree = "<group>"; };
@@ -122,6 +128,7 @@
 		AFAD531B201841C300795D69 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
 		AFBEB4ED201C03CF0025D5EF /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
+		AFC7AEED2020360B0072566B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../Common Frameworks/SnapKit.framework"; sourceTree = "<group>"; };
 		AFDF0C7620159C5000B04C8E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDF0C7920159C5000B04C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFDF0C8020159C5100B04C8E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -146,7 +153,9 @@
 				AF89DEE8201D6D8300866FF9 /* SystemConfiguration.framework in Frameworks */,
 				AF89DEE7201D6D7C00866FF9 /* AudioToolbox.framework in Frameworks */,
 				AF89DED8201D6C3E00866FF9 /* Bolts.framework in Frameworks */,
+				AFC7AEEE2020360C0072566B /* SnapKit.framework in Frameworks */,
 				AF89DECE201D6BBE00866FF9 /* Core.framework in Frameworks */,
+				AFC7AEF120203A540072566B /* SnapKit.framework in Frameworks */,
 				AF89DED9201D6C3E00866FF9 /* Parse.framework in Frameworks */,
 				AF89DEE2201D6D2F00866FF9 /* Mapbox.framework in Frameworks */,
 				AF89DED0201D6BBE00866FF9 /* UI.framework in Frameworks */,
@@ -183,14 +192,15 @@
 			path = VerifyPIN;
 			sourceTree = "<group>";
 		};
-		AF232698201713C700A9350E /* View Controller Extensions */ = {
+		AF232698201713C700A9350E /* Convenience */ = {
 			isa = PBXGroup;
 			children = (
+				AF21DDDE20204955006543C1 /* Icon.swift */,
 				AFFDD57C201700D700FC1058 /* UIAlertAction Extension.swift */,
 				AF307BB62018148600145C18 /* UIViewControllerExtension.swift */,
 				AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */,
 			);
-			path = "View Controller Extensions";
+			path = Convenience;
 			sourceTree = "<group>";
 		};
 		AF78CC41201AE5E3007193CC /* Map Utilities */ = {
@@ -217,6 +227,7 @@
 		AF87E538201D69EA0015CE1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AFC7AEED2020360B0072566B /* SnapKit.framework */,
 				AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */,
 				AF89DEE1201D6D2F00866FF9 /* Mapbox.framework */,
 				AF89DED6201D6C3E00866FF9 /* Bolts.framework */,
@@ -308,7 +319,7 @@
 			children = (
 				AF397A73201AED68008E6969 /* App-Bridging-Header.h */,
 				AFDF0C8020159C5100B04C8E /* Colors.xcassets */,
-				AF307BBC20181D1C00145C18 /* Icons.xcassets */,
+				AF21DDDC2020494B006543C1 /* Icons.xcassets */,
 				AFDF0C8220159C5100B04C8E /* LaunchScreen.storyboard */,
 				AFDF0C8520159C5100B04C8E /* Info.plist */,
 			);
@@ -349,7 +360,7 @@
 				AFDF0C7920159C5000B04C8E /* AppDelegate.swift */,
 				AF78CC41201AE5E3007193CC /* Map Utilities */,
 				AFEC3A5D2017AC8400375989 /* Strings.swift */,
-				AF232698201713C700A9350E /* View Controller Extensions */,
+				AF232698201713C700A9350E /* Convenience */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -465,12 +476,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF21DDDD2020494B006543C1 /* Icons.xcassets in Resources */,
+				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
 				AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */,
 				AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */,
 				AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */,
 				AFAD532220184BF500795D69 /* WalkthroughViewController.storyboard in Resources */,
-				AF307BBD20181D1C00145C18 /* Icons.xcassets in Resources */,
-				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
 				AF9C7C7F2019C1AD0040BF13 /* MapViewController.storyboard in Resources */,
 				AF337A27201C010E004F8EF0 /* EventDetailViewController.storyboard in Resources */,
 			);
@@ -535,6 +546,7 @@
 				AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */,
 				AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */,
 				AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */,
+				AF21DDDF20204955006543C1 /* Icon.swift in Sources */,
 				AFFD986F201BE013006F40FE /* EventClusterAnnotationView.swift in Sources */,
 				AFFDD56E2016B73E00FC1058 /* ViewControllerMakeable.swift in Sources */,
 				AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */,
