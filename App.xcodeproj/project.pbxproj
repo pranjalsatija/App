@@ -33,6 +33,8 @@
 		AF89DEE7201D6D7C00866FF9 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEBA201D6AF500866FF9 /* AudioToolbox.framework */; };
 		AF89DEE8201D6D8300866FF9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF87E539201D69EA0015CE1C /* SystemConfiguration.framework */; };
 		AF95509A201D878B00A91486 /* MGLMapView+ClusterKit.m in Sources */ = {isa = PBXBuildFile; fileRef = AF955099201D878B00A91486 /* MGLMapView+ClusterKit.m */; };
+		AF95B7232022E0C9004D9C7E /* ViewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF95B7222022E0C9004D9C7E /* ViewImageViewController.swift */; };
+		AF95B7262022E104004D9C7E /* ViewImageViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF95B7252022E104004D9C7E /* ViewImageViewController.storyboard */; };
 		AF9C7C772019B2350040BF13 /* LocationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */; };
 		AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C7A2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift */; };
 		AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */; };
@@ -118,6 +120,8 @@
 		AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ClusterKit.framework; sourceTree = "<group>"; };
 		AF955098201D878B00A91486 /* MGLMapView+ClusterKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "MGLMapView+ClusterKit.h"; path = "Resources/Frameworks/MGLMapView+ClusterKit/MGLMapView+ClusterKit.h"; sourceTree = SOURCE_ROOT; };
 		AF955099201D878B00A91486 /* MGLMapView+ClusterKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "MGLMapView+ClusterKit.m"; path = "Resources/Frameworks/MGLMapView+ClusterKit/MGLMapView+ClusterKit.m"; sourceTree = SOURCE_ROOT; };
+		AF95B7222022E0C9004D9C7E /* ViewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewImageViewController.swift; sourceTree = "<group>"; };
+		AF95B7252022E104004D9C7E /* ViewImageViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewImageViewController.storyboard; sourceTree = "<group>"; };
 		AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccessPage.swift; sourceTree = "<group>"; };
 		AF9C7C7A2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewControllerPagingManager.swift; sourceTree = "<group>"; };
 		AF9C7C7C2019C1A10040BF13 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MapViewController.swift; path = "View Controllers/Map/MapViewController.swift"; sourceTree = SOURCE_ROOT; };
@@ -252,6 +256,15 @@
 			path = "MGLMapView+ClusterKit";
 			sourceTree = "<group>";
 		};
+		AF95B7242022E0E9004D9C7E /* ViewImage */ = {
+			isa = PBXGroup;
+			children = (
+				AF95B7252022E104004D9C7E /* ViewImageViewController.storyboard */,
+				AF95B7222022E0C9004D9C7E /* ViewImageViewController.swift */,
+			);
+			path = ViewImage;
+			sourceTree = "<group>";
+		};
 		AF9C7C792019C0560040BF13 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -350,6 +363,7 @@
 				AFAD5318201840D500795D69 /* Walkthrough */,
 				AF9C7C792019C0560040BF13 /* Map */,
 				AFBF6F89201BFCBF00319440 /* EventDetail */,
+				AF95B7242022E0E9004D9C7E /* ViewImage */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -480,6 +494,7 @@
 				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
 				AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */,
 				AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */,
+				AF95B7262022E104004D9C7E /* ViewImageViewController.storyboard in Resources */,
 				AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */,
 				AFAD532220184BF500795D69 /* WalkthroughViewController.storyboard in Resources */,
 				AF9C7C7F2019C1AD0040BF13 /* MapViewController.storyboard in Resources */,
@@ -556,6 +571,7 @@
 				AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */,
 				AF95509A201D878B00A91486 /* MGLMapView+ClusterKit.m in Sources */,
 				AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */,
+				AF95B7232022E0C9004D9C7E /* ViewImageViewController.swift in Sources */,
 				AF9C7C772019B2350040BF13 /* LocationAccessPage.swift in Sources */,
 				AFBEB4EE201C03CF0025D5EF /* EventDetailViewController.swift in Sources */,
 			);

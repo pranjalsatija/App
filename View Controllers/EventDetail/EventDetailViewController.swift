@@ -32,10 +32,16 @@ extension EventDetailViewController {
 
     func configureEventDetailTableView() {
         eventDetailTableView.onRefresh {(done) in
-            self.event.refreshInPlace {(_) in
-                self.configureDataSource()
+            self.refresh {
                 done()
             }
+        }
+    }
+
+    func refresh(_ completion: (() -> Void)? = nil) {
+        self.event.refreshInPlace {(_) in
+            self.configureDataSource()
+            completion?()
         }
     }
 }
@@ -67,18 +73,33 @@ extension EventDetailViewController {
 
             let maxHeight = min(self.view.frame.width, self.view.frame.height) * (9 / 16)
             let coverPhotoImageView = DataSourceImageView.make(image: image, contentMode: .scaleAspectFill, maxHeight: maxHeight,
-                                                               padding: 0, imageColor: nil)
+                                                               padding: 0, imageColor: nil, tapHandler: self.coverPhotoPressed)
             self.eventDetailDataSource.insert(coverPhotoImageView, at: 0)
         }
 
+        let eventDescriptionTextView = DataSourceTextView.make(text: event.description, icon: Icon.info.image)
+        eventDescriptionTextView.textLabel.boldSubstring(event.category.name)
+
+        let statusDescriptionTextView = DataSourceTextView.make(text: event.statusMessage, icon: Icon.clock.image)
+
         eventDetailDataSource = DataSource([
-            DataSourceTextView.make(text: event.category.name + " - " + event.eventDescription, icon: Icon.info.image),
-            DataSourceTextView.make(text: event.statusMessage, icon: Icon.clock.image)
+            eventDescriptionTextView,
+            statusDescriptionTextView
         ])
 
         if let likeCountMessage = event.likeCountMessage {
-            let visitCountTextView = DataSourceTextView.make(text: likeCountMessage, icon: Icon.like.image, iconColor: .like)
-            eventDetailDataSource.append(visitCountTextView)
+            User.current.hasLiked(event: event) {(_, hasLikedEvent) in
+                let hasLikedEvent = hasLikedEvent ?? false
+                let icon: Icon = hasLikedEvent ? .like : .likeOutline
+                let accessory: Icon? = hasLikedEvent ? nil : .chevronRight
+                let likeCountTextView = DataSourceTextView.make(text: likeCountMessage,
+                                                                 icon: icon.image,
+                                                                 iconColor: .like,
+                                                                 accessoryImage: accessory?.image,
+                                                                 tapHandler: self.likeButtonPressed)
+
+                self.eventDetailDataSource.insert(likeCountTextView, after: statusDescriptionTextView)
+            }
         }
 
         if let visitCountMessage = event.visitCountMessage {
@@ -97,12 +118,37 @@ extension EventDetailViewController {
         eventDetailDataSource.bind(to: eventDetailTableView)
     }
 
+    private func coverPhotoPressed(_ imageView: DataSourceImageView) {
+        guard let image = imageView.imageView.image else {
+            return
+        }
+
+        present(ViewImageViewController.make({
+            $0.image = image
+        }), animated: true)
+    }
+
     private func getDirectionsButtonPressed(_ buttonView: DataSourceButtonView) {
         guard let mapsURL = event.mapsURL else {
             return
         }
 
         UIApplication.shared.open(mapsURL)
+    }
+
+    private func likeButtonPressed(_ textView: DataSourceTextView) {
+        User.current.like(event: event) {(_, didLikeEvent) in
+            guard didLikeEvent == true else {
+                return
+            }
+
+            self.event.likeCount = NSNumber(value: self.event.likeCount.intValue + 1)
+            if let likeCountMessage = self.event.likeCountMessage {
+                textView.accessoryImageView?.image = nil
+                textView.iconImageView?.image = Icon.like.image
+                textView.textLabel.text = likeCountMessage
+            }
+        }
     }
 
     private func shareButtonPressed(_ buttonView: DataSourceButtonView) {
