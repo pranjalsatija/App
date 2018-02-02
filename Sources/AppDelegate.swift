@@ -18,6 +18,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         if User.current != nil {
             window?.rootViewController = MapViewController.make()
+            User.current?.startSession()
         }
+
+        UIApplication.shared.registerForRemoteNotifications()
+    }
+
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        registerForNotifications(withToken: deviceToken)
+    }
+
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        User.current?.startSession()
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        User.current?.endLatestSession()
     }
 }

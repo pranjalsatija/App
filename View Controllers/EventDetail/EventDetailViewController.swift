@@ -26,8 +26,10 @@ final class EventDetailViewController: UIViewController, ViewControllerMakeable 
 extension EventDetailViewController {
     override func viewDidLoad() {
         titleLabel.text = event.title
+
         configureDataSource()
         configureEventDetailTableView()
+        User.current.markAsViewed(event)
     }
 
     func configureEventDetailTableView() {
@@ -158,5 +160,6 @@ extension EventDetailViewController {
 
         let shareSheet = UIActivityViewController(activityItems: [shareURL], applicationActivities: nil)
         present(shareSheet, animated: true)
+        User.current.registerShare(with: event)
     }
 }

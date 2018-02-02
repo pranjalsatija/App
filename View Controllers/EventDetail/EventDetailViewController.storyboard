@@ -51,10 +51,10 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="60"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYu-kB-MHL" customClass="Button" customModule="UI">
-                                        <rect key="frame" x="8" y="8" width="44" height="44"/>
+                                        <rect key="frame" x="8" y="0.0" width="44" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="26t-cL-fK3"/>
-                                            <constraint firstAttribute="height" constant="44" id="SKQ-CL-BpH"/>
+                                            <constraint firstAttribute="height" constant="60" id="SKQ-CL-BpH"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="dismiss"/>
@@ -69,10 +69,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vVb-OQ-TKS" customClass="Button" customModule="UI">
-                                        <rect key="frame" x="323" y="8" width="44" height="44"/>
+                                        <rect key="frame" x="323" y="0.0" width="44" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="44" id="8YJ-NU-upj"/>
                                             <constraint firstAttribute="width" constant="44" id="ADk-hT-qhg"/>
+                                            <constraint firstAttribute="height" constant="60" id="SGp-9z-Avx"/>
                                         </constraints>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="report"/>
@@ -83,14 +83,14 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="vVb-OQ-TKS" secondAttribute="bottom" constant="8" id="03b-lI-iNP"/>
+                                    <constraint firstAttribute="bottom" secondItem="vVb-OQ-TKS" secondAttribute="bottom" id="03b-lI-iNP"/>
                                     <constraint firstItem="2vU-e0-il4" firstAttribute="centerY" secondItem="elU-yI-9gp" secondAttribute="centerY" id="0fx-Cz-Obm"/>
-                                    <constraint firstItem="pYu-kB-MHL" firstAttribute="top" secondItem="elU-yI-9gp" secondAttribute="top" constant="8" id="4eP-T7-5lX"/>
+                                    <constraint firstItem="pYu-kB-MHL" firstAttribute="top" secondItem="elU-yI-9gp" secondAttribute="top" id="4eP-T7-5lX"/>
                                     <constraint firstItem="pYu-kB-MHL" firstAttribute="leading" secondItem="elU-yI-9gp" secondAttribute="leading" constant="8" id="9Ka-8r-QMH"/>
                                     <constraint firstItem="2vU-e0-il4" firstAttribute="leading" secondItem="pYu-kB-MHL" secondAttribute="trailing" constant="8" id="Bqh-F4-ylC"/>
-                                    <constraint firstAttribute="bottom" secondItem="pYu-kB-MHL" secondAttribute="bottom" constant="8" id="Nh4-LS-ORg"/>
+                                    <constraint firstAttribute="bottom" secondItem="pYu-kB-MHL" secondAttribute="bottom" id="Nh4-LS-ORg"/>
                                     <constraint firstItem="vVb-OQ-TKS" firstAttribute="leading" secondItem="2vU-e0-il4" secondAttribute="trailing" constant="8" id="fJX-Jn-4mm"/>
-                                    <constraint firstItem="vVb-OQ-TKS" firstAttribute="top" secondItem="elU-yI-9gp" secondAttribute="top" constant="8" id="oGi-aa-iG0"/>
+                                    <constraint firstItem="vVb-OQ-TKS" firstAttribute="top" secondItem="elU-yI-9gp" secondAttribute="top" id="oGi-aa-iG0"/>
                                     <constraint firstAttribute="trailing" secondItem="vVb-OQ-TKS" secondAttribute="trailing" constant="8" id="tdC-Nx-YWx"/>
                                 </constraints>
                             </view>

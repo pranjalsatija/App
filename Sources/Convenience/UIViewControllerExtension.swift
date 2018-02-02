@@ -24,10 +24,10 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
 
-    func showError() {
+    func showError(message: String? = nil) {
         let alert = UIAlertController(
             title: String.AlertTitle.errorOccurred,
-            message: String.AlertMessage.errorOccurred,
+            message: message ?? String.AlertMessage.errorOccurred,
             preferredStyle: .alert
         )
 

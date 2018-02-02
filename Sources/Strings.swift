@@ -21,7 +21,7 @@ extension String {
     }
 
     struct AlertMessage {
-        static let errorOccurred = "An error occurred."
+        static let errorOccurred = "An error occurred. Please try again later."
         static let eventReported = "Thank you for reporting this event. Someone from our content moderation team has been alerted."
     }
 

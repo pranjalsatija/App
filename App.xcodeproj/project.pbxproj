@@ -50,6 +50,9 @@
 		AFC7AEEE2020360C0072566B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; };
 		AFC7AEF120203A540072566B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; };
 		AFC7AEF220203A540072566B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AFD19E60202395E900D3BA49 /* ViewProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD19E5F202395E900D3BA49 /* ViewProfileViewController.storyboard */; };
+		AFD19E622023962600D3BA49 /* ViewProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD19E612023962600D3BA49 /* ViewProfileViewController.swift */; };
+		AFD19E642023B1B100D3BA49 /* VisitCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFD19E632023B1B100D3BA49 /* VisitCell.swift */; };
 		AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFDF0C7920159C5000B04C8E /* AppDelegate.swift */; };
 		AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8020159C5100B04C8E /* Colors.xcassets */; };
 		AFDF0C8420159C5100B04C8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFDF0C8220159C5100B04C8E /* LaunchScreen.storyboard */; };
@@ -133,6 +136,9 @@
 		AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
 		AFBEB4ED201C03CF0025D5EF /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		AFC7AEED2020360B0072566B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../Common Frameworks/SnapKit.framework"; sourceTree = "<group>"; };
+		AFD19E5F202395E900D3BA49 /* ViewProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewProfileViewController.storyboard; sourceTree = "<group>"; };
+		AFD19E612023962600D3BA49 /* ViewProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewProfileViewController.swift; sourceTree = "<group>"; };
+		AFD19E632023B1B100D3BA49 /* VisitCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisitCell.swift; sourceTree = "<group>"; };
 		AFDF0C7620159C5000B04C8E /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AFDF0C7920159C5000B04C8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AFDF0C8020159C5100B04C8E /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
@@ -304,6 +310,16 @@
 			path = EventDetail;
 			sourceTree = "<group>";
 		};
+		AFD19E5E202395CD00D3BA49 /* ViewProfile */ = {
+			isa = PBXGroup;
+			children = (
+				AFD19E5F202395E900D3BA49 /* ViewProfileViewController.storyboard */,
+				AFD19E612023962600D3BA49 /* ViewProfileViewController.swift */,
+				AFD19E632023B1B100D3BA49 /* VisitCell.swift */,
+			);
+			path = ViewProfile;
+			sourceTree = "<group>";
+		};
 		AFDF0C6D20159C5000B04C8E = {
 			isa = PBXGroup;
 			children = (
@@ -364,6 +380,7 @@
 				AF9C7C792019C0560040BF13 /* Map */,
 				AFBF6F89201BFCBF00319440 /* EventDetail */,
 				AF95B7242022E0E9004D9C7E /* ViewImage */,
+				AFD19E5E202395CD00D3BA49 /* ViewProfile */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -492,6 +509,7 @@
 			files = (
 				AF21DDDD2020494B006543C1 /* Icons.xcassets in Resources */,
 				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
+				AFD19E60202395E900D3BA49 /* ViewProfileViewController.storyboard in Resources */,
 				AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */,
 				AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */,
 				AF95B7262022E104004D9C7E /* ViewImageViewController.storyboard in Resources */,
@@ -553,12 +571,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFDD5752016B80000FC1058 /* SplashScreenViewController.swift in Sources */,
+				AFD19E642023B1B100D3BA49 /* VisitCell.swift in Sources */,
 				AFEC3A5E2017AC8400375989 /* Strings.swift in Sources */,
 				AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */,
 				AFAD531A201840E500795D69 /* WalkthroughViewController.swift in Sources */,
 				AF9C7C83201AA74B0040BF13 /* MapViewControllerMapManager.swift in Sources */,
 				AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */,
 				AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */,
+				AFD19E622023962600D3BA49 /* ViewProfileViewController.swift in Sources */,
 				AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */,
 				AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */,
 				AF21DDDF20204955006543C1 /* Icon.swift in Sources */,

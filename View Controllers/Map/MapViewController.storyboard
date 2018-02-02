@@ -64,7 +64,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mark" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cFg-fH-5Sa">
                                         <rect key="frame" x="16" y="18" width="45" height="24"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
-                                        <color key="textColor" name="Primary Text"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8ZT-Lf-cvS">
@@ -73,10 +73,22 @@
                                             <constraint firstAttribute="width" constant="44" id="KRf-k5-32d"/>
                                             <constraint firstAttribute="height" constant="60" id="mrU-gV-hBL"/>
                                         </constraints>
-                                        <color key="tintColor" name="Base"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="currentLocation"/>
                                         <connections>
                                             <action selector="currentLocationButtonPressed" destination="pS2-ba-u50" eventType="touchUpInside" id="J6V-C3-LYb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FcC-KU-sB6">
+                                        <rect key="frame" x="279" y="0.0" width="44" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="8q9-Up-pkz"/>
+                                            <constraint firstAttribute="height" constant="60" id="R54-Sx-A7o"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="user"/>
+                                        <connections>
+                                            <action selector="myProfileButtonPressed" destination="pS2-ba-u50" eventType="touchUpInside" id="qut-V7-o5h"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -85,12 +97,15 @@
                                     <constraint firstAttribute="bottom" secondItem="8ZT-Lf-cvS" secondAttribute="bottom" id="15h-U1-JpJ"/>
                                     <constraint firstItem="8ZT-Lf-cvS" firstAttribute="top" secondItem="swp-va-ezf" secondAttribute="top" id="ErR-D7-4Rp"/>
                                     <constraint firstAttribute="trailing" secondItem="8ZT-Lf-cvS" secondAttribute="trailing" constant="8" id="TgA-M3-PqN"/>
+                                    <constraint firstAttribute="bottom" secondItem="FcC-KU-sB6" secondAttribute="bottom" id="XjX-dc-Qv4"/>
+                                    <constraint firstItem="FcC-KU-sB6" firstAttribute="top" secondItem="swp-va-ezf" secondAttribute="top" id="dLK-L1-Zmp"/>
                                     <constraint firstItem="cFg-fH-5Sa" firstAttribute="centerY" secondItem="swp-va-ezf" secondAttribute="centerY" id="hzT-sh-sZc"/>
                                     <constraint firstItem="cFg-fH-5Sa" firstAttribute="leading" secondItem="swp-va-ezf" secondAttribute="leading" constant="16" id="jRv-FG-cOZ"/>
+                                    <constraint firstItem="8ZT-Lf-cvS" firstAttribute="leading" secondItem="FcC-KU-sB6" secondAttribute="trailing" id="kiw-2J-EWa"/>
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="Background"/>
+                        <color key="backgroundColor" name="Base"/>
                         <constraints>
                             <constraint firstItem="swp-va-ezf" firstAttribute="top" secondItem="Wzo-r3-5aX" secondAttribute="top" id="Bd0-FX-g3Y"/>
                             <constraint firstItem="swp-va-ezf" firstAttribute="trailing" secondItem="Wzo-r3-5aX" secondAttribute="trailing" id="U0Z-qS-klh"/>
@@ -114,14 +129,15 @@
     </scenes>
     <resources>
         <image name="currentLocation" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
         <namedColor name="Background">
             <color red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Base">
-            <color red="0.23921568630000001" green="0.65490196079999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.23921568627450981" green="0.65490196078431373" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
-        <namedColor name="Primary Text">
-            <color red="0.0" green="0.0" blue="0.0" alpha="0.87000000476837158" colorSpace="custom" customColorSpace="sRGB"/>
+        <namedColor name="Base">
+            <color red="0.23921568630000001" green="0.65490196079999996" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
