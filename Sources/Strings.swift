@@ -37,6 +37,11 @@ extension String {
         static let shareEvent = "SHARE EVENT"
     }
 
+    struct DummyAccount {
+        static let phoneNumber = "0000000000"
+        static let password = "0000000000"
+    }
+
     struct MessageText {
         static let locationRequired = "Your location is required to use mark. Please use Settings to enable location access."
     }

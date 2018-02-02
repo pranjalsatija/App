@@ -34,6 +34,14 @@ extension SplashScreenViewController {
                 self.present(VerifyPINViewController.make({
                     $0.user = user
                 }), animated: true)
+            } else if phoneNumber == String.DummyAccount.phoneNumber {
+                User.logInWithUsername(inBackground: phoneNumber, password: String.DummyAccount.password) {(error, _) in
+                    if error != nil {
+                        self.showError()
+                    } else {
+                        self.present(MapViewController.make(), animated: true)
+                    }
+                }
             }
         }
     }
