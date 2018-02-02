@@ -17,6 +17,12 @@
 		AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CC44201AE60B007193CC /* EventAnnotation.swift */; };
 		AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */; };
 		AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5F2019326300443157 /* NotificationAccessPage.swift */; };
+		AF8428862024E6260019D29E /* InstabugCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8428842024E6260019D29E /* InstabugCore.framework */; };
+		AF8428872024E6260019D29E /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8428852024E6260019D29E /* Instabug.framework */; };
+		AF8428882024E62D0019D29E /* Instabug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8428852024E6260019D29E /* Instabug.framework */; };
+		AF8428892024E62D0019D29E /* Instabug.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF8428852024E6260019D29E /* Instabug.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AF84288A2024E62D0019D29E /* InstabugCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF8428842024E6260019D29E /* InstabugCore.framework */; };
+		AF84288B2024E62D0019D29E /* InstabugCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF8428842024E6260019D29E /* InstabugCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF89DEBD201D6AFB00866FF9 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEBC201D6AFA00866FF9 /* libsqlite3.tbd */; };
 		AF89DECE201D6BBE00866FF9 /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEC0201D6AFE00866FF9 /* Core.framework */; };
 		AF89DECF201D6BBE00866FF9 /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEC0201D6AFE00866FF9 /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -26,7 +32,6 @@
 		AF89DED9201D6C3E00866FF9 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DED7201D6C3E00866FF9 /* Parse.framework */; };
 		AF89DEDB201D6C4C00866FF9 /* Bolts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DED6201D6C3E00866FF9 /* Bolts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF89DEDD201D6C4C00866FF9 /* Parse.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DED7201D6C3E00866FF9 /* Parse.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		AF89DEE2201D6D2F00866FF9 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE1201D6D2F00866FF9 /* Mapbox.framework */; };
 		AF89DEE3201D6D3600866FF9 /* Mapbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE1201D6D2F00866FF9 /* Mapbox.framework */; };
 		AF89DEE4201D6D3600866FF9 /* Mapbox.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE1201D6D2F00866FF9 /* Mapbox.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AF89DEE6201D6D5800866FF9 /* ClusterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */; };
@@ -44,10 +49,8 @@
 		AFAD531A201840E500795D69 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD5319201840E500795D69 /* WalkthroughViewController.swift */; };
 		AFAD531C201841C300795D69 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFAD531B201841C300795D69 /* Map.swift */; };
 		AFAD532220184BF500795D69 /* WalkthroughViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */; };
-		AFAE91C5201E67020034B7FD /* ClusterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */; };
 		AFAE91C6201E67020034B7FD /* ClusterKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFBEB4EE201C03CF0025D5EF /* EventDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBEB4ED201C03CF0025D5EF /* EventDetailViewController.swift */; };
-		AFC7AEEE2020360C0072566B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; };
 		AFC7AEF120203A540072566B /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; };
 		AFC7AEF220203A540072566B /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AFC7AEED2020360B0072566B /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AFD19E60202395E900D3BA49 /* ViewProfileViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AFD19E5F202395E900D3BA49 /* ViewProfileViewController.storyboard */; };
@@ -88,8 +91,10 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AFAE91C6201E67020034B7FD /* ClusterKit.framework in Embed Frameworks */,
+				AF84288B2024E62D0019D29E /* InstabugCore.framework in Embed Frameworks */,
 				AF89DEE4201D6D3600866FF9 /* Mapbox.framework in Embed Frameworks */,
 				AF89DEDB201D6C4C00866FF9 /* Bolts.framework in Embed Frameworks */,
+				AF8428892024E62D0019D29E /* Instabug.framework in Embed Frameworks */,
 				AFC7AEF220203A540072566B /* SnapKit.framework in Embed Frameworks */,
 				AF89DECF201D6BBE00866FF9 /* Core.framework in Embed Frameworks */,
 				AF89DED1201D6BBE00866FF9 /* UI.framework in Embed Frameworks */,
@@ -112,6 +117,8 @@
 		AF78CC44201AE60B007193CC /* EventAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnnotation.swift; sourceTree = "<group>"; };
 		AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MGLCoordinateBounds+GeoBox.swift"; sourceTree = "<group>"; };
 		AF822B5F2019326300443157 /* NotificationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAccessPage.swift; sourceTree = "<group>"; };
+		AF8428842024E6260019D29E /* InstabugCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InstabugCore.framework; path = "../../../Common Frameworks/InstabugCore.framework"; sourceTree = "<group>"; };
+		AF8428852024E6260019D29E /* Instabug.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Instabug.framework; path = "../../../Common Frameworks/Instabug.framework"; sourceTree = "<group>"; };
 		AF87E539201D69EA0015CE1C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		AF89DEBA201D6AF500866FF9 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AF89DEBC201D6AFA00866FF9 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
@@ -163,16 +170,17 @@
 				AF89DEE8201D6D8300866FF9 /* SystemConfiguration.framework in Frameworks */,
 				AF89DEE7201D6D7C00866FF9 /* AudioToolbox.framework in Frameworks */,
 				AF89DED8201D6C3E00866FF9 /* Bolts.framework in Frameworks */,
-				AFC7AEEE2020360C0072566B /* SnapKit.framework in Frameworks */,
+				AF8428872024E6260019D29E /* Instabug.framework in Frameworks */,
+				AF84288A2024E62D0019D29E /* InstabugCore.framework in Frameworks */,
 				AF89DECE201D6BBE00866FF9 /* Core.framework in Frameworks */,
 				AFC7AEF120203A540072566B /* SnapKit.framework in Frameworks */,
+				AF8428862024E6260019D29E /* InstabugCore.framework in Frameworks */,
 				AF89DED9201D6C3E00866FF9 /* Parse.framework in Frameworks */,
-				AF89DEE2201D6D2F00866FF9 /* Mapbox.framework in Frameworks */,
 				AF89DED0201D6BBE00866FF9 /* UI.framework in Frameworks */,
-				AFAE91C5201E67020034B7FD /* ClusterKit.framework in Frameworks */,
 				AF89DEE6201D6D5800866FF9 /* ClusterKit.framework in Frameworks */,
 				AF89DEBD201D6AFB00866FF9 /* libsqlite3.tbd in Frameworks */,
 				AF89DEE3201D6D3600866FF9 /* Mapbox.framework in Frameworks */,
+				AF8428882024E62D0019D29E /* Instabug.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,6 +245,8 @@
 		AF87E538201D69EA0015CE1C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AF8428852024E6260019D29E /* Instabug.framework */,
+				AF8428842024E6260019D29E /* InstabugCore.framework */,
 				AFC7AEED2020360B0072566B /* SnapKit.framework */,
 				AF89DEE5201D6D5800866FF9 /* ClusterKit.framework */,
 				AF89DEE1201D6D2F00866FF9 /* Mapbox.framework */,

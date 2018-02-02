@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func applicationDidFinishLaunching(_ application: UIApplication) {
-        Core.initialize(withAppID: "mark", serverURL: "https://api.mark.events/parse")
+        Core.initialize(withAppID: "mark", serverURL: "https://api.mark.events/parse", instabugToken: "c560ab3f2692fd5e5ddabe768d6416a7")
 
         if User.current != nil {
             window?.rootViewController = MapViewController.make()
