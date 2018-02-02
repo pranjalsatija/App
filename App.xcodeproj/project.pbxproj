@@ -141,6 +141,7 @@
 		AFAD5319201840E500795D69 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		AFAD531B201841C300795D69 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		AFAD532120184BF500795D69 /* WalkthroughViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WalkthroughViewController.storyboard; sourceTree = "<group>"; };
+		AFB309D120251DD200CD0C77 /* App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = App.entitlements; sourceTree = "<group>"; };
 		AFBEB4ED201C03CF0025D5EF /* EventDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailViewController.swift; sourceTree = "<group>"; };
 		AFC7AEED2020360B0072566B /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = "../../../Common Frameworks/SnapKit.framework"; sourceTree = "<group>"; };
 		AFD19E5F202395E900D3BA49 /* ViewProfileViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ViewProfileViewController.storyboard; sourceTree = "<group>"; };
@@ -356,6 +357,7 @@
 		AFDF0C7820159C5000B04C8E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AFB309D120251DD200CD0C77 /* App.entitlements */,
 				AF397A73201AED68008E6969 /* App-Bridging-Header.h */,
 				AFDF0C8020159C5100B04C8E /* Colors.xcassets */,
 				AF21DDDC2020494B006543C1 /* Icons.xcassets */,
@@ -479,6 +481,14 @@
 						CreatedOnToolsVersion = 9.2;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 					AFDF0C8920159C5100B04C8E = {
 						CreatedOnToolsVersion = 9.2;
@@ -760,8 +770,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Resources/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X872NB7KGG;
+				DEVELOPMENT_TEAM = MXGFXQ4GNJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"../Common\\ Frameworks",
 					"$(PROJECT_DIR)/Resources/Frameworks",
@@ -773,7 +784,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resources/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = events.mark.App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.events.mark.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Resources/App-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -787,8 +798,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = Resources/App.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X872NB7KGG;
+				DEVELOPMENT_TEAM = MXGFXQ4GNJ;
 				FRAMEWORK_SEARCH_PATHS = (
 					"../Common\\ Frameworks",
 					"$(PROJECT_DIR)/Resources/Frameworks",
@@ -800,7 +812,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Resources/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = events.mark.App;
+				PRODUCT_BUNDLE_IDENTIFIER = com.events.mark.App;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Resources/App-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
