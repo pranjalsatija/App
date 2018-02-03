@@ -12,6 +12,10 @@ import UI
 final class SettingsViewController: UIViewController, ViewControllerMakeable {
     var settingsDataSource: DataSource!
 
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+
     @IBOutlet var settingsTableView: UITableView!
 }
 
