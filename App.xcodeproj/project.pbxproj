@@ -14,6 +14,9 @@
 		AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */; };
 		AF337A27201C010E004F8EF0 /* EventDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF337A26201C010E004F8EF0 /* EventDetailViewController.storyboard */; };
 		AF397A78201AF0E4008E6969 /* EventAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF397A77201AF0E4008E6969 /* EventAnnotationView.swift */; };
+		AF49147920252DDC0055A275 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF49147820252DDC0055A275 /* SettingsViewController.swift */; };
+		AF49147B20252E0A0055A275 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF49147A20252E0A0055A275 /* SettingsViewController.storyboard */; };
+		AF6870C5202536D200009451 /* ProvideFeedbackPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF6870C4202536D200009451 /* ProvideFeedbackPage.swift */; };
 		AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF78CC44201AE60B007193CC /* EventAnnotation.swift */; };
 		AF822B5E2019317300443157 /* MGLCoordinateBounds+GeoBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */; };
 		AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF822B5F2019326300443157 /* NotificationAccessPage.swift */; };
@@ -114,6 +117,9 @@
 		AF337A26201C010E004F8EF0 /* EventDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetailViewController.storyboard; sourceTree = "<group>"; };
 		AF397A73201AED68008E6969 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		AF397A77201AF0E4008E6969 /* EventAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnnotationView.swift; sourceTree = "<group>"; };
+		AF49147820252DDC0055A275 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AF49147A20252E0A0055A275 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
+		AF6870C4202536D200009451 /* ProvideFeedbackPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProvideFeedbackPage.swift; sourceTree = "<group>"; };
 		AF78CC44201AE60B007193CC /* EventAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventAnnotation.swift; sourceTree = "<group>"; };
 		AF822B5D2019317300443157 /* MGLCoordinateBounds+GeoBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MGLCoordinateBounds+GeoBox.swift"; sourceTree = "<group>"; };
 		AF822B5F2019326300443157 /* NotificationAccessPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAccessPage.swift; sourceTree = "<group>"; };
@@ -222,6 +228,15 @@
 			path = Convenience;
 			sourceTree = "<group>";
 		};
+		AF49147720252DC10055A275 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				AF49147A20252E0A0055A275 /* SettingsViewController.storyboard */,
+				AF49147820252DDC0055A275 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		AF78CC41201AE5E3007193CC /* Map Utilities */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +254,7 @@
 			children = (
 				AF822B5F2019326300443157 /* NotificationAccessPage.swift */,
 				AF9C7C762019B2350040BF13 /* LocationAccessPage.swift */,
+				AF6870C4202536D200009451 /* ProvideFeedbackPage.swift */,
 			);
 			path = Pages;
 			sourceTree = "<group>";
@@ -393,6 +409,7 @@
 				AFBF6F89201BFCBF00319440 /* EventDetail */,
 				AF95B7242022E0E9004D9C7E /* ViewImage */,
 				AFD19E5E202395CD00D3BA49 /* ViewProfile */,
+				AF49147720252DC10055A275 /* Settings */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -528,6 +545,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AF21DDDD2020494B006543C1 /* Icons.xcassets in Resources */,
+				AF49147B20252E0A0055A275 /* SettingsViewController.storyboard in Resources */,
 				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
 				AFD19E60202395E900D3BA49 /* ViewProfileViewController.storyboard in Resources */,
 				AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */,
@@ -595,9 +613,11 @@
 				AFEC3A5E2017AC8400375989 /* Strings.swift in Sources */,
 				AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */,
 				AFAD531A201840E500795D69 /* WalkthroughViewController.swift in Sources */,
+				AF6870C5202536D200009451 /* ProvideFeedbackPage.swift in Sources */,
 				AF9C7C83201AA74B0040BF13 /* MapViewControllerMapManager.swift in Sources */,
 				AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */,
 				AF9C7C7D2019C1A10040BF13 /* MapViewController.swift in Sources */,
+				AF49147920252DDC0055A275 /* SettingsViewController.swift in Sources */,
 				AFD19E622023962600D3BA49 /* ViewProfileViewController.swift in Sources */,
 				AF9C7C7B2019C0B70040BF13 /* WalkthroughViewControllerPagingManager.swift in Sources */,
 				AFFDD57D201700D700FC1058 /* UIAlertAction Extension.swift in Sources */,

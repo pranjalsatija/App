@@ -43,6 +43,12 @@ extension ViewProfileViewController {
     }
 }
 
+extension ViewProfileViewController {
+    @IBAction func settingsButtonPressed() {
+        present(SettingsViewController.make(), animated: true)
+    }
+}
+
 extension ViewProfileViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         visits.isEmpty ? visitsTableView.showEmptyState() : visitsTableView.hideEmptyState()

@@ -23,6 +23,25 @@ extension SplashScreenViewController {
 
         getStartedButton.showLoading()
 
+        if phoneNumber == String.DummyAccount.phoneNumber {
+            User.logInWithUsername(inBackground: phoneNumber, password: String.DummyAccount.password) {(_, error) in
+                if error != nil {
+                    self.showError()
+                } else {
+                    let walkthrough = WalkthroughViewController.make()
+                    walkthrough.onCompletion {
+                        walkthrough.present(MapViewController.make(), animated: true)
+                    }
+
+                    self.present(walkthrough, animated: true)
+                }
+            }
+        } else {
+            self.sendPIN(to: phoneNumber)
+        }
+    }
+
+    private func sendPIN(to phoneNumber: String) {
         User.sendPIN(to: phoneNumber) {(error, user) in
             self.getStartedButton.hideLoading()
 
@@ -34,14 +53,6 @@ extension SplashScreenViewController {
                 self.present(VerifyPINViewController.make({
                     $0.user = user
                 }), animated: true)
-            } else if phoneNumber == String.DummyAccount.phoneNumber {
-                User.logInWithUsername(inBackground: phoneNumber, password: String.DummyAccount.password) {(error, _) in
-                    if error != nil {
-                        self.showError()
-                    } else {
-                        self.present(MapViewController.make(), animated: true)
-                    }
-                }
             }
         }
     }

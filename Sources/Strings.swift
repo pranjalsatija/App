@@ -21,25 +21,31 @@ extension String {
     }
 
     struct AlertMessage {
+        static let cachesCleared = "mark's file caches have been cleared."
         static let errorOccurred = "An error occurred. Please try again later."
         static let eventReported = "Thank you for reporting this event. Someone from our content moderation team has been alerted."
+        static let logOutSuccessful = "You have been logged out successfully. mark will now exit."
     }
 
     struct AlertTitle {
+        static let cachesCleared = "Caches Cleared"
         static let errorOccurred = "Error"
         static let eventReported = "Event Reported"
+        static let logOutSuccessful = "Logged Out"
     }
 
     struct ButtonText {
+        static let clearCache = "CLEAR CACHE"
         static let getDirections = "GET DIRECTIONS"
         static let inviteFriends = "INVITE FRIENDS"
+        static let logOut = "LOG OUT"
         static let openSettings = "OPEN SETTINGS"
         static let shareEvent = "SHARE EVENT"
     }
 
     struct DummyAccount {
         static let phoneNumber = "0000000000"
-        static let password = "0000000000"
+        static let password = "0000"
     }
 
     struct MessageText {

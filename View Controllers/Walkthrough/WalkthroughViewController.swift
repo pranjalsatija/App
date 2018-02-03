@@ -25,13 +25,20 @@ extension WalkthroughViewController {
         let locationPage = makeViewController(withIdentifier: "Walkthrough.Location") as! LocationAccessPage
         locationPage.onAuthorizationStatusChange(locationAuthorizationStatusChanged)
 
+        //swiftlint:disable:next force_cast
+        let provideFeedbackPage = makeViewController(withIdentifier: "Walkthrough.ProvideFeedback") as! ProvideFeedbackPage
+        provideFeedbackPage.onShake(didShakeDevice)
+
         pages = [
             makeViewController(withIdentifier: "Walkthrough.Welcome"),
             notificationPage,
-            locationPage
+            locationPage,
+            provideFeedbackPage
         ]
 
-        setViewControllers([pages.first!], direction: .forward, animated: true)
+        DispatchQueue.main.async {
+            self.setViewControllers([self.pages.first!], direction: .forward, animated: true)
+        }
 
         dataSource = self
     }
@@ -44,7 +51,7 @@ extension WalkthroughViewController {
         if index >= pages.endIndex - 1 {
             completionHandler?()
         } else {
-            setViewControllers([pages[index + 1]], direction: .forward, animated: true)
+            setViewControllers([pages[index + 1]], direction: .forward, animated: false)
         }
     }
 
@@ -60,7 +67,19 @@ extension WalkthroughViewController {
         if index >= pages.endIndex - 1 {
             completionHandler?()
         } else {
-            setViewControllers([pages[index + 1]], direction: .forward, animated: true)
+            setViewControllers([pages[index + 1]], direction: .forward, animated: false)
+        }
+    }
+
+    func didShakeDevice() {
+        guard let first = viewControllers?.first, let index = pages.index(of: first) else {
+            return
+        }
+
+        if index >= pages.endIndex - 1 {
+            completionHandler?()
+        } else {
+            setViewControllers([pages[index + 1]], direction: .forward, animated: false)
         }
     }
 }
