@@ -24,14 +24,16 @@ extension MapViewControllerMapManager: MGLMapViewDelegate {
         Event.getRelevantEvents(in: mapView.visibleCoordinateBounds, categories: nil) {(error, events) in
             if error != nil {
                 self.mapViewController.updateStatus(.error)
-            } else if let events = events, !events.isEmpty {
+            } else if let events = events {
+                if events.isEmpty, !UIApplication.shared.didShowNoEventsAlert {
+                    self.mapViewController.showAlert(withTitle: String.AlertTitle.noEvents, message: String.AlertMessage.noEvents)
+                    UIApplication.shared.didShowNoEventsAlert = true
+                }
+
                 self.mapViewController.events = events
                 self.mapViewController.map.display(events)
                 self.mapViewController.updateStatus(.ready)
                 self.mapViewController.map.clusterManager.updateClustersIfNeeded()
-            } else if let events = events, events.isEmpty, !UIApplication.shared.didShowNoEventsAlert {
-                self.mapViewController.showAlert(withTitle: String.AlertTitle.noEvents, message: String.AlertMessage.noEvents)
-                UIApplication.shared.didShowNoEventsAlert = true
             }
         }
     }
