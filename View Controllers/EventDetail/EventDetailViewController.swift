@@ -89,19 +89,19 @@ extension EventDetailViewController {
             statusDescriptionTextView
         ])
 
-        if let likeCountMessage = event.likeCountMessage {
-            User.current.hasLiked(event: event) {(_, hasLikedEvent) in
-                let hasLikedEvent = hasLikedEvent ?? false
-                let icon: Icon = hasLikedEvent ? .like : .likeOutline
-                let accessory: Icon? = hasLikedEvent ? nil : .chevronRight
-                let likeCountTextView = DataSourceTextView.make(text: likeCountMessage,
-                                                                 icon: icon.image,
-                                                                 iconColor: .like,
-                                                                 accessoryImage: accessory?.image,
-                                                                 tapHandler: self.likeButtonPressed)
 
-                self.eventDetailDataSource.insert(likeCountTextView, after: statusDescriptionTextView)
-            }
+        let likeCountMessage = event.likeCountMessage ?? String.MessageText.likeEvent
+        User.current.hasLiked(event: event) {(_, hasLikedEvent) in
+            let hasLikedEvent = hasLikedEvent ?? false
+            let icon: Icon = hasLikedEvent ? .like : .likeOutline
+            let accessory: Icon? = hasLikedEvent ? nil : .chevronRight
+            let likeCountTextView = DataSourceTextView.make(text: likeCountMessage,
+                                                            icon: icon.image,
+                                                            iconColor: .like,
+                                                            accessoryImage: accessory?.image,
+                                                            tapHandler: self.likeButtonPressed)
+
+            self.eventDetailDataSource.insert(likeCountTextView, after: statusDescriptionTextView)
         }
 
         if let visitCountMessage = event.visitCountMessage {

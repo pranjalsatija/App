@@ -10,6 +10,7 @@
 		AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */; };
 		AF21DDDD2020494B006543C1 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF21DDDC2020494B006543C1 /* Icons.xcassets */; };
 		AF21DDDF20204955006543C1 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DDDE20204955006543C1 /* Icon.swift */; };
+		AF2991B220292A0200A0CDEE /* UIApplication Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2991B120292A0200A0CDEE /* UIApplication Extension.swift */; };
 		AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF307BB62018148600145C18 /* UIViewControllerExtension.swift */; };
 		AF307BB9201815D900145C18 /* VerifyPINViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */; };
 		AF337A27201C010E004F8EF0 /* EventDetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF337A26201C010E004F8EF0 /* EventDetailViewController.storyboard */; };
@@ -106,6 +107,7 @@
 		AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPINViewController.swift; sourceTree = "<group>"; };
 		AF21DDDC2020494B006543C1 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF21DDDE20204955006543C1 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
+		AF2991B120292A0200A0CDEE /* UIApplication Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication Extension.swift"; sourceTree = "<group>"; };
 		AF307BB62018148600145C18 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		AF307BB8201815D900145C18 /* VerifyPINViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = VerifyPINViewController.storyboard; sourceTree = "<group>"; };
 		AF337A26201C010E004F8EF0 /* EventDetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventDetailViewController.storyboard; sourceTree = "<group>"; };
@@ -213,8 +215,10 @@
 			isa = PBXGroup;
 			children = (
 				AF21DDDE20204955006543C1 /* Icon.swift */,
+				AF2991B120292A0200A0CDEE /* UIApplication Extension.swift */,
 				AFFDD57C201700D700FC1058 /* UIAlertAction Extension.swift */,
 				AF307BB62018148600145C18 /* UIViewControllerExtension.swift */,
+				AFEC3A5D2017AC8400375989 /* Strings.swift */,
 				AFFDD56D2016B73E00FC1058 /* ViewControllerMakeable.swift */,
 			);
 			path = Convenience;
@@ -411,7 +415,6 @@
 			children = (
 				AFDF0C7920159C5000B04C8E /* AppDelegate.swift */,
 				AF78CC41201AE5E3007193CC /* Map Utilities */,
-				AFEC3A5D2017AC8400375989 /* Strings.swift */,
 				AF232698201713C700A9350E /* Convenience */,
 			);
 			path = Sources;
@@ -638,6 +641,7 @@
 				AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */,
 				AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */,
 				AF95B7232022E0C9004D9C7E /* ViewImageViewController.swift in Sources */,
+				AF2991B220292A0200A0CDEE /* UIApplication Extension.swift in Sources */,
 				AF9C7C772019B2350040BF13 /* LocationAccessPage.swift in Sources */,
 				AFBEB4EE201C03CF0025D5EF /* EventDetailViewController.swift in Sources */,
 			);

@@ -6,6 +6,7 @@
 //  Copyright © 2018 Pranjal Satija. All rights reserved.
 //
 
+// swiftlint:disable line_length
 // MARK: UIAlertController
 extension String {
     struct ActionSheetMessage {
@@ -25,6 +26,7 @@ extension String {
         static let errorOccurred = "An error occurred. Please try again later."
         static let eventReported = "Thank you for reporting this event. Someone from our content moderation team has been alerted."
         static let logOutSuccessful = "You have been logged out successfully. mark will now exit."
+        static let noEvents = "There are no events in this area yet. We're always adding new events but until then, you may want to look somewhere else."
     }
 
     struct AlertTitle {
@@ -32,6 +34,7 @@ extension String {
         static let errorOccurred = "Error"
         static let eventReported = "Event Reported"
         static let logOutSuccessful = "Logged Out"
+        static let noEvents = "No Events"
     }
 
     struct ButtonText {
@@ -49,6 +52,7 @@ extension String {
     }
 
     struct MessageText {
+        static let likeEvent = "Tap to be the first person to like this event."
         static let locationRequired = "Your location is required to use mark. Please use Settings to enable location access."
     }
 
