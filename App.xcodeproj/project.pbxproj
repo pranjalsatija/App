@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		AF077E3B2017F74F0040D2DE /* VerifyPINViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */; };
+		AF1C3D4C202E0A97006CE407 /* EventListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AF1C3D4B202E0A97006CE407 /* EventListViewController.storyboard */; };
+		AF1C3D4E202E0AC9006CE407 /* EventListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C3D4D202E0AC9006CE407 /* EventListViewController.swift */; };
+		AF1C3D50202E0C43006CE407 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF1C3D4F202E0C43006CE407 /* EventCell.swift */; };
 		AF21DDDD2020494B006543C1 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AF21DDDC2020494B006543C1 /* Icons.xcassets */; };
 		AF21DDDF20204955006543C1 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF21DDDE20204955006543C1 /* Icon.swift */; };
 		AF2991B220292A0200A0CDEE /* UIApplication Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF2991B120292A0200A0CDEE /* UIApplication Extension.swift */; };
@@ -105,6 +108,9 @@
 
 /* Begin PBXFileReference section */
 		AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPINViewController.swift; sourceTree = "<group>"; };
+		AF1C3D4B202E0A97006CE407 /* EventListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventListViewController.storyboard; sourceTree = "<group>"; };
+		AF1C3D4D202E0AC9006CE407 /* EventListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventListViewController.swift; sourceTree = "<group>"; };
+		AF1C3D4F202E0C43006CE407 /* EventCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
 		AF21DDDC2020494B006543C1 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		AF21DDDE20204955006543C1 /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		AF2991B120292A0200A0CDEE /* UIApplication Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication Extension.swift"; sourceTree = "<group>"; };
@@ -209,6 +215,16 @@
 				AF077E3A2017F74F0040D2DE /* VerifyPINViewController.swift */,
 			);
 			path = VerifyPIN;
+			sourceTree = "<group>";
+		};
+		AF1C3D4A202E0A80006CE407 /* EventList */ = {
+			isa = PBXGroup;
+			children = (
+				AF1C3D4B202E0A97006CE407 /* EventListViewController.storyboard */,
+				AF1C3D4D202E0AC9006CE407 /* EventListViewController.swift */,
+				AF1C3D4F202E0C43006CE407 /* EventCell.swift */,
+			);
+			path = EventList;
 			sourceTree = "<group>";
 		};
 		AF232698201713C700A9350E /* Convenience */ = {
@@ -403,6 +419,7 @@
 				AFAD5318201840D500795D69 /* Walkthrough */,
 				AF9C7C792019C0560040BF13 /* Map */,
 				AFBF6F89201BFCBF00319440 /* EventDetail */,
+				AF1C3D4A202E0A80006CE407 /* EventList */,
 				AF95B7242022E0E9004D9C7E /* ViewImage */,
 				AFD19E5E202395CD00D3BA49 /* ViewProfile */,
 				AF49147720252DC10055A275 /* Settings */,
@@ -542,6 +559,7 @@
 			files = (
 				AF21DDDD2020494B006543C1 /* Icons.xcassets in Resources */,
 				AF49147B20252E0A0055A275 /* SettingsViewController.storyboard in Resources */,
+				AF1C3D4C202E0A97006CE407 /* EventListViewController.storyboard in Resources */,
 				AFDF0C8120159C5100B04C8E /* Colors.xcassets in Resources */,
 				AFD19E60202395E900D3BA49 /* ViewProfileViewController.storyboard in Resources */,
 				AFA03D4C2015AF9F0033A87B /* SplashScreenViewController.storyboard in Resources */,
@@ -618,6 +636,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AFFDD5752016B80000FC1058 /* SplashScreenViewController.swift in Sources */,
+				AF1C3D4E202E0AC9006CE407 /* EventListViewController.swift in Sources */,
 				AFD19E642023B1B100D3BA49 /* VisitCell.swift in Sources */,
 				AFEC3A5E2017AC8400375989 /* Strings.swift in Sources */,
 				AFDF0C7A20159C5000B04C8E /* AppDelegate.swift in Sources */,
@@ -639,6 +658,7 @@
 				AFAD531C201841C300795D69 /* Map.swift in Sources */,
 				AF307BB72018148600145C18 /* UIViewControllerExtension.swift in Sources */,
 				AF78CC45201AE60B007193CC /* EventAnnotation.swift in Sources */,
+				AF1C3D50202E0C43006CE407 /* EventCell.swift in Sources */,
 				AF822B602019326300443157 /* NotificationAccessPage.swift in Sources */,
 				AF95B7232022E0C9004D9C7E /* ViewImageViewController.swift in Sources */,
 				AF2991B220292A0200A0CDEE /* UIApplication Extension.swift in Sources */,

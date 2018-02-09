@@ -46,6 +46,11 @@ extension MapViewControllerMapManager: MGLMapViewDelegate {
                 mapViewController.present(EventDetailViewController.make({
                     $0.event = events.first
                 }), animated: true)
+            } else if events.forAll({ $0.location.distance(from: annotation.coordinate) < 5 }) {
+                mapViewController.present(EventListViewController.make({
+                    $0.location = annotation.coordinate
+                    $0.events = events
+                }), animated: true)
             } else {
                 let camera = mapView.cameraThatFitsCluster(cluster, edgePadding: UIEdgeInsets(top: 48, left: 48, bottom: 48, right: 48))
                 mapView.setCamera(camera, animated: true)
